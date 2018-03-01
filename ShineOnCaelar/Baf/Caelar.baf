@@ -1,0 +1,7 @@
+IF
+Global("bd_alt_willing_surrender","global",6)
+!See("BDHepher")
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1) 
+END

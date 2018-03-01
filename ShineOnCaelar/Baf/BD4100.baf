@@ -1,0 +1,24 @@
+IF
+OR(2)
+Global("bd_alt_willing_surrender","global",7)
+Global("bd_alt_willing_surrender","global",5)
+THEN
+RESPONSE #100
+SetGlobal("bd_alt_willing_surrender","global",8)
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("BD4300","",[1964.767],2))
+ActionOverride(Player2,LeaveAreaLUA("BD4300","",[1964.767],2))
+ActionOverride(Player3,LeaveAreaLUA("BD4300","",[1964.767],2))
+ActionOverride(Player4,LeaveAreaLUA("BD4300","",[1964.767],2))
+ActionOverride(Player5,LeaveAreaLUA("BD4300","",[1964.767],2))
+ActionOverride(Player6,LeaveAreaLUA("BD4300","",[1964.767],2))
+Wait(2)
+SetGlobal("bd_plot","global",481)
+Wait(2)
+FadeFromColor([20.0],0)
+Wait(2)
+EndCutSceneMode()
+END
+

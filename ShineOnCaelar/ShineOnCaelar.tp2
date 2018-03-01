@@ -1,0 +1,36 @@
+// Shine On Caelar, a mod for EET
+
+BACKUP ~ShineOnCaelar/backup~
+AUTHOR ~Roxanne - Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com~
+
+VERSION ~v0.05~
+
+AUTO_TRA ~ShineOnCaelar/TRA/%s~
+
+LANGUAGE ~English~ ~english~ ~ShineOnCaelar/TRA/setup-ShineOnCaelar.tra~
+
+BEGIN
+~SoD Alternative~
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~bdcaelar.cre~ THEN BEGIN
+FAIL @0
+END
+
+COMPILE ~ShineOnCaelar/d~
+
+COMPILE 
+~ShineOnCaelar/baf/CVInSpe1.baf~
+
+EXTEND_BOTTOM ~BD3000.bcs~ ~ShineOnCaelar/baf/bd3000.baf~
+EXTEND_TOP ~BD4100.bcs~ ~ShineOnCaelar/baf/bd4100.baf~
+EXTEND_TOP ~BD4300.bcs~ ~ShineOnCaelar/baf/bd4300.baf~
+EXTEND_TOP ~BDCaelar.bcs~ ~ShineOnCaelar/baf/Caelar.baf~
+
+COPY ~ShineOnCaelar/baf/CHPALT11.2DA~ ~override/CHPALT11.2DA~
+REPLACE ~99990~ @2
+REPLACE ~99991~ @2
+
+
+BEGIN
+~Caelar's Rescue~
+REQUIRE_PREDICATE GAME_IS ~ eet~ @1
+REQUIRE_COMPONENT ~Setup-ShineOnCaelar.tp2~ 0 @4

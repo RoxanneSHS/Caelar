@@ -1,0 +1,7 @@
+IF
+GlobalGT("bd_mdd420_good","global",1)
+GlobalLT("bd_alt_willing_surrender","global",2)
+THEN
+RESPONSE #100
+SetGlobal("bd_alt_willing_surrender","global",2)
+END
