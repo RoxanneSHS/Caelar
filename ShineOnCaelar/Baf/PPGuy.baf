@@ -1,0 +1,13 @@
+IF
+WalkedToTrigger([ANYONE])
+Global("LeavingPocketPlane","AR4500",0)
+GlobalGT("GavePocketPlane","GLOBAL",0)
+!GlobalTimerNotExpired("Triggered","MYAREA")
+Global("BDEEAunplot","Global",4) 
+Global("MelissanYagaKillJob","GLOBAL",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobalTimer("Triggered","MYAREA",TWO_MINUTES)
+CreateCreature("PPGuy01",[1993.1116],0) 
+END

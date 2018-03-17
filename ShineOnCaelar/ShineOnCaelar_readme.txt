@@ -1,4 +1,4 @@
-Shine on, Caelar v.05 (Beta status)
+Shine on, Caelar v.06 (Beta status)
 =====================
 A mod for SoD and EET by RoxanneSHS
 

@@ -1,0 +1,45 @@
+IF
+Global("bd_unlock_door","bd4500",1)
+GlobalGT("Chapter","Global",19)
+Global("bd_alt_willing_surrender","global",10)
+THEN
+RESPONSE #100
+SetGlobal("bd_unlock_door","bd4500",2)
+TriggerActivation("TranBD4600",FALSE)
+CloseDoor("door01")
+Lock("door01")
+Continue()
+END
+
+IF
+Global("bd_unlock_door","bd4500",2)
+THEN
+RESPONSE #100
+SetGlobal("bd_unlock_door","bd4500",3)
+CreateCreature("bdhamatu",[1940.600],10)
+CreateCreature("bdimp",[1375.895],10)
+CreateCreature("bdhamatu",[1440.950],10)
+CreateCreature("bdimp",[940.1120],8)
+CreateCreature("bdabired",[910.1220],8)
+CreateCreature("bdhamatu",[790.1225],8)
+CreateCreature("bdabired",[725.1310],10)
+CreateCreature("bdhelcat",[760.1145],8)
+Continue()
+END
+
+IF
+Global("K#DisableSPIN649","GLOBAL",1)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("K#PP_REM",Player1) 
+SetGlobal("K#DisableSPIN649","GLOBAL",0)
+Continue()
+END
+
+IF
+Global("BDEEAunplot","Global",6)
+!InMyArea("BDCaelar")
+THEN
+RESPONSE #100
+MoveGlobalObject("BDCaelar",Player1)
+END

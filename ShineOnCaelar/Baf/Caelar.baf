@@ -5,3 +5,11 @@ THEN
 RESPONSE #100
 StartDialogueNoSet(Player1) 
 END
+
+IF
+Global("BDEEAunplot","Global",6)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObjectFollow(Player1)
+END

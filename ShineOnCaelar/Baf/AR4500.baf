@@ -1,0 +1,11 @@
+IF
+Global("BDEEAunplot","Global",6)
+AreaCheckObject("AR4500",Player1)
+!InMyArea("BDCaelar") 
+THEN
+RESPONSE #100
+SetGlobal("BDEEAunplot","Global",7)
+MoveGlobal("ar4500","BDCaelar",[2130.1300])
+Wait(2)		
+CreateVisualEffectObject("SPPowrrd","BDCaelar") 
+END

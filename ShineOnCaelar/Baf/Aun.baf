@@ -1,0 +1,28 @@
+IF
+Global("BDEEAunplot","Global",1)
+See(Player1)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet(Player1) 
+END
+
+IF
+Global("BDEEAunplot","Global",2) 
+THEN
+RESPONSE #100
+SetGlobal("BDEEAunplot","Global",3)
+CreateVisualEffectObject("SPPowrrd",Player1)
+CreateVisualEffectObject("SPPowrrd","BDAun")
+ActionOverride("BDAun",MoveBetweenAreas("ar4500",[2180.1325],5))
+END
+
+IF
+AreaCheck("ar4500")
+GlobalLT("BDEEAunplot","Global",7)
+Dead("Yaga01")
+THEN
+RESPONSE #100
+SetGlobal("BDEEAunplot","Global",93)
+DestroySelf()
+END

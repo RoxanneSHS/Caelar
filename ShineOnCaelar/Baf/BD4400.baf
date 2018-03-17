@@ -1,0 +1,31 @@
+IF
+Global("BDEEAunplot","Global",5)
+InMyArea("BDCaelar")
+Global("CaelClean","bd4400",0)
+THEN
+RESPONSE #100
+SetGlobal("CaelClean","bd4400",1)
+ActionOverride("BDCaelar",MakeGlobal())
+Wait(2)
+ActionOverride("BDCaelar",DestroyItem("BDFinca1"))
+Wait(2)
+ActionOverride("BDCaelar",DestroyItem("Minhp1"))
+Continue()
+END
+
+IF
+Global("K#DisableSPIN649","GLOBAL",1)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("K#PP_REM",Player1) 
+SetGlobal("K#DisableSPIN649","GLOBAL",0)
+Continue()
+END
+
+IF
+Global("BDEEAunplot","Global",6)
+!InMyArea("BDCaelar")
+THEN
+RESPONSE #100
+MoveGlobalObject("BDCaelar",Player1)
+END

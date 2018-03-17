@@ -1,0 +1,11 @@
+IF
+OR(2)
+Global("bd_alt_willing_surrender","global",9)
+Global("bd_caelar_fate","global",2)
+!Dead("bdcaelar")
+Global("BDEEAunplot","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("BDEEAunplot","Global",1)
+CreateCreature("BDAun",[766.419],4) 
+END

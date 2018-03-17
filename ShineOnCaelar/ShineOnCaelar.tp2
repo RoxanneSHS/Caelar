@@ -3,7 +3,7 @@
 BACKUP ~ShineOnCaelar/backup~
 AUTHOR ~Roxanne - Send PM to Roxanne at SHSForums.net or RoxanneSHS@mail.com~
 
-VERSION ~v0.5~
+VERSION ~v0.6~
 
 AUTO_TRA ~ShineOnCaelar/TRA/%s~
 
@@ -34,3 +34,12 @@ BEGIN
 ~Caelar's Rescue~
 REQUIRE_PREDICATE GAME_IS ~ eet~ @1
 REQUIRE_COMPONENT ~Setup-ShineOnCaelar.tp2~ 0 @4
+
+EXTEND_TOP ~BD4400.bcs~ ~ShineOnCaelar/baf/bd4400.baf~
+EXTEND_TOP ~BD4500.bcs~ ~ShineOnCaelar/baf/bd4500.baf~
+EXTEND_TOP ~ar4500.bcs~ ~ShineOnCaelar/baf/ar4500.baf~
+EXTEND_TOP ~ar5004.bcs~ ~ShineOnCaelar/baf/ar5004.baf~
+EXTEND_TOP ~BDAun.bcs~ ~ShineOnCaelar/baf/aun.baf~
+EXTEND_TOP ~ITPPlane.bcs~ ~ShineOnCaelar/baf/ppguy.baf~
+
+COMPILE ~ShineOnCaelar/ToBd~
