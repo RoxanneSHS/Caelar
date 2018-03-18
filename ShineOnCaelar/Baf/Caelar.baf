@@ -24,3 +24,39 @@ RESPONSE #100
 MoveToObject("BDAun")
 StartDialogueNoSet("BDCaelar") 
 END
+
+IF
+Global("BDEEAunplot","Global",8)
+Global("InParty","LOCALS",0)
+InParty("BDCaelar")  
+THEN
+RESPONSE #100
+SetGlobal("InParty","LOCALS",1)
+ChangeAIScript("DPlayer2",DEFAULT)
+END
+
+IF
+Global("BDEEAunplot","Global",8)
+Global("BD_ToB_CaelarD","Global",0)
+!AreaCheck("ar4500")
+InParty(Myself)
+THEN
+RESPONSE #100
+SetGlobal("BD_ToB_CaelarD","Global",1)
+END
+
+IF
+OR(2)
+Global("BD_ToB_CaelarD","Global",1)
+Global("BD_ToB_CaelarD","Global",3)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogNoSet("BDCaelar")
+END
