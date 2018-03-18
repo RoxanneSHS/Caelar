@@ -14,5 +14,7 @@ Do NOT use this mod when playing SoD for the first time. It bypasses the semi-ci
 This addition (for EET only) will allow you to finally release the Shining Lady from Avernus. The extension starts in ToB when you meet Aun Argent in Saradush. Your Bhaal plane portal allows you to access other parts of Hell and by this provides a means to rescue Caelar and let her join your party. 
 This way all your former opponents from the various campaigns (Sarevok, Caelar and Irenicus) may be added to your final party.
 Instead of seeking redemption as a fallen paladin, Caelar will try to become the champion of a rising new god, although her idea about your role differs quite a bit from Sarevok's view...
+Caelar has a quest concerning the souls lost in Avernus which includes the party's return to Dragonspear and various SoD areas.
 
 Part 2 is currently suspended for release until details about a possible other mod that may bring Caelar back to the game are known. This is to avoid overlap or incompatibility. (Note that part 1 stays true to the original SoD contents concerning Caelar and therefore should be compatible with any mod that adds her in later parts.)
+You can currently play the rescue sequence in ToB but Caelar is not joinable yet.
