@@ -8,4 +8,6 @@ SetGlobal("BDEEAunplot","Global",7)
 MoveGlobal("ar4500","BDCaelar",[2130.1300])
 Wait(2)		
 CreateVisualEffectObject("SPPowrrd","BDCaelar") 
+Wait(2)
+GiveItemCreate("BDSolGlo","BDCaelar",0,0,0)
 END

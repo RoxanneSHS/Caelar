@@ -43,3 +43,20 @@ EXTEND_TOP ~BDAun.bcs~ ~ShineOnCaelar/baf/aun.baf~
 EXTEND_TOP ~ITPPlane.bcs~ ~ShineOnCaelar/baf/ppguy.baf~
 
 COMPILE ~ShineOnCaelar/ToBd~
+
+COPY ~ShineOnCaelar/Itm/CMISC8Q.BAM~ ~override~
+COPY ~ShineOnCaelar/Itm/IMISC8Q.BAM~ ~override~
+COPY ~ShineOnCaelar/Itm/BDSolGlo.itm~ ~override~
+SAY NAME1 @7
+SAY NAME2 @7
+SAY UNIDENTIFIED_DESC @8
+SAY DESC @9
+
+COPY_EXISTING ~bdcaelar.cre~ ~override~
+WRITE_LONG 0xb98 1 
+WRITE_LONG 0xbac 1
+WRITE_LONG 0xbc0 1
+WRITE_LONG 0xbe8 1
+WRITE_LONG 0xbfc 1
+BUT_ONLY
+
