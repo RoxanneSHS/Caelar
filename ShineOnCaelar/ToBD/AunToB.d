@@ -151,3 +151,37 @@ END
 CHAIN
 IF~~THEN BDCaelar Rescue5
 ~Uncle Aun is there already? (Sigh) My only option is to follow you, it seems.~EXIT
+
+CHAIN
+IF~Global("BDEEAunplot","Global",7)~THEN BDCaelar Uncle1
+~Uncle, an Argent never gives up. I didn't and neither did you.~
+DO~SetGlobal("BDEEAunplot","Global",8)~
+==BDAUN~Caelar, my child. It's the Bhaalspawn <CHARNAME> who brought you back. It's <PRO_HIMHER> you have to thank, not me.~
+==BDCaelar~It was you who organised it all, uncle Aun, the Bhaalspawn was just useful due to <PRO_HISHER> progress down the road of the cursed *father*.~
+==BDAUN~Be fair, Caelar, you may not fully understand it all. Yes, this is the Bhaalspawn's plane made out of the own essence and will. The facade may be ugly but the outcome of it all is not yet set.~
+=~We can play a part in it - I mean, you can play a part in it, Caelar. How <CHARNAME> deals with the power of the dead god will soon be determined. You owe <PRO_HIMHER> your sword and allegiance in the events to come.~
+==BDCaelar~Do I?~
+=~I'm no Shining Lady anymore. I've seen more of destruction and death than is necessary, uncle. The Bhaalspawn will not lead the Realms to peace, I know the prophesy just as well as you know it.~
+==BDAUN~Then you know that there may be an outcome that will provide hope rather than murder. We must work towards this goal, Caelar. The name Argent must no longer be associated with suffering and betrayal, with Dragonspear and what happened there. Our family and name must regain what it once was. YOU must do that, you're the one to bring back for us what was lost in Avernus.~
+==BDCaelar~Very well, uncle.~
+=~<CHARNAME>, my time in Avernus was not completely in vain. Apart from what I learned about myself and my mistakes, I was able to actually gain a significant number of souls of those who deemed lost. This soul globe contains them. I swear you my loyalty in the events to come if you promise to help me bring those souls to rest.~
+==BDAUN~<CHARNAME>, I beg of you, agree to that offer. Save your fate and hers and that of the departed.~
+=~I will return to Bridgefort, my part in this is finished.~DO~MoveBetweenAreas("bd2000",[3204.1405],4)~
+==BDCaelar~I know where to find you, uncle, in case I can't convince <CHARNAME> that out joint forces are what is needed now.~
+END
+++~What is this task you ask of me, Caelar, that will gain me your loyalty?~+ Uncle2
+++~I rescued you from the frying pan, you're in no position to make demands here, Caelar.~+ Uncle2
+++~I have done what I owed to your uncle. I will have no further dealings with you, Caelar.~+ Uncle2
+
+CHAIN
+IF~~THEN BDCaelar Uncle2
+~Honestly, <CHARNAME>, I don't yet know what may be involved to bring those souls to peace. I agree to follow your command as my liege lord if you are willing to help me with my quest if we find a way to pursue it. The heroic Bhaalspawn and the heiress of the Argents together again, what do you say?~
+END
+++~I don't see you changed much, Caelar. But it's not for me to judge. I see the opportunity to finish the Dragonspear crusade and have a competent companion at the same time. I agree.~DO~JoinParty()~EXIT
+++~There may be some chance to repent and repair the damage your crusade has done. I'm sure that an Argent will hold her word and I know you can use your sword well. Join me.~DO~JoinParty()~EXIT
+++~What I have done until now is exactly how much I'm willing to do for you, *Shining Lady*. And it's already more than you deserved. Go with your uncle and learn about humbleness.~DO~MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
+++~I have to think about this all. You may stay here for the time. I will decide about your proposal later.~+ Uncle3
+
+CHAIN
+IF~~THEN BDCaelar Uncle3
+~Such hesitation from one who is on the brink to become a Power of the Realms. I made a mistake to expect too much from you, <CHARNAME>. I still have enough strength to follow my mission alone.~DO~MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT

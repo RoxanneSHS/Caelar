@@ -13,3 +13,14 @@ THEN
 RESPONSE #100
 MoveToObjectFollow(Player1)
 END
+
+IF
+Global("BDEEAunplot","Global",7)
+AreaCheck("ar4500")
+See("BDAun")
+Delay(12)
+THEN
+RESPONSE #100
+MoveToObject("BDAun")
+StartDialogueNoSet("BDCaelar") 
+END
