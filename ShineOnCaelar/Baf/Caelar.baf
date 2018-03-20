@@ -33,7 +33,7 @@ THEN
 RESPONSE #100
 SetGlobal("InParty","LOCALS",1)
 ChangeAIScript("DPlayer2",DEFAULT)
-ChangeAlignment(Myself,NEUTRAL)
+ChangeAlignment(Myself,LAWFUL_NEUTRAL)
 END
 
 IF
