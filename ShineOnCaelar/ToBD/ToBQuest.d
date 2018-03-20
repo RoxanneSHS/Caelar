@@ -54,4 +54,4 @@ IF~!InParty("BDCaelar")~THEN REPLY~You were always good in shifting the blame to
 
 CHAIN
 IF~~THEN BDCaeen1 welcome2
-~Men, they carry our belongings on their bodies. Let's get back what is ours.~DO~Enemy() Shout(ASSIST)~EXIT
+~Men, they carry our belongings on their bodies. Let's get back what is ours.~DO~Enemy() Shout(ASSIST) ActionOverride("BDCaeen2",Enemy())~EXIT
