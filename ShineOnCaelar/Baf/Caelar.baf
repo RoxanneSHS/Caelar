@@ -53,9 +53,22 @@ SetGlobal("BD_ToB_CaelarD","Global",1)
 END
 
 IF
-OR(2)
+AreaCheck("BD5300")
+Global("BD_Visited_BD5300","Global",3)
+OR(3)
+Range("Infopoint18",15)
+Range("Infopoint19",15)
+Range("Fugue_portal",30)
+THEN
+RESPONSE #100
+SetGlobal("BD_Visited_BD5300","Global",4)
+END
+
+IF
+OR(3)
 Global("BD_ToB_CaelarD","Global",1)
 Global("BD_ToB_CaelarD","Global",3)
+Global("BD_Visited_BD5300","Global",4)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])

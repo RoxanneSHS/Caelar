@@ -55,3 +55,21 @@ IF~!InParty("BDCaelar")~THEN REPLY~You were always good in shifting the blame to
 CHAIN
 IF~~THEN BDCaeen1 welcome2
 ~Men, they carry our belongings on their bodies. Let's get back what is ours.~DO~Enemy() Shout(ASSIST) ActionOverride("BDCaeen2",Enemy())~EXIT
+
+CHAIN
+IF~Global("BD_Visited_BD5300","Global",4)~THEN BDCaelar AtChasm1
+~This must be the place, <CHARNAME>. This chasm ahead feels like the other plane that we seek.~
+DO~SetGlobal("BD_Visited_BD5300","Global",5)~
+=~If we only knew how to release those souls now and let them enter.~
+END
+++~Brilliant planning, Caelar. Did we come all the way just to stand here now like fools?~+ AtChasm2
+++~Maybe it's as easy as just throwing the globe inside...but what if more is required?~+ AtChasm2
+IF~GlobalGT("BD_BONES","BD5300",1)~THEN REPLY~Last time we just had to move close enough and activate that trigger.~+ AtChasm3
+
+CHAIN
+IF~~THEN BDCaelar AtChasm2
+~Sometimes I ask myself how someone like you could make it this far, really. I suggest that we just move close enough and activate that trigger.~EXIT
+
+CHAIN
+IF~~THEN BDCaelar AtChasm3
+~Sounds like the best option to me, <CHARNAME>.~EXIT

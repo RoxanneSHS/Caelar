@@ -1,0 +1,38 @@
+IF
+Global("BD_Visited_BD5300","Global",3)
+!InParty("BDCAelar")
+PartyHasItem("BDSolGlo")
+THEN
+RESPONSE #100
+SetGlobal("BD_Visited_BD5300","Global",5)
+END
+
+IF
+GlobalLT("BD_Visited_BD5300","Global",6)
+Global("K#DisableSPIN649","GLOBAL",0)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("K#PP_ADD",Player1) 
+SetGlobal("K#DisableSPIN649","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("BD_Visited_BD5300","Global",5)
+Global("K#DisableSPIN649","GLOBAL",1)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("K#PP_REM",Player1) 
+SetGlobal("K#DisableSPIN649","GLOBAL",0)
+Continue()
+END
+
+IF
+Global("BD_Visited_BD5300","Global",6)
+Global("BDNedlock","BD5100",0)
+THEN
+RESPONSE #100
+SetGlobal("BDNedlock","BD5100",1)
+CreateCreature("bdnederl",[940.2363],7)
+END
+

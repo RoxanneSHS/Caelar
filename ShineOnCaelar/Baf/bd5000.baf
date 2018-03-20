@@ -17,3 +17,19 @@ CreateCreature("bdcrux30",[2525.958],11)
 CreateCreature("bdcrus23",[2357.948],2)
 CreateCreature("orc07",[3103.940],4)
 END
+
+IF
+Global("BD_NewQuest","BD5000",1)
+InMyArea("BDJulann")
+THEN
+RESPONSE #100
+ActionOverride("BDJulann",DestroySelf())
+END
+
+IF
+Global("BD_NewQuest","BD5000",1)
+InMyArea("BDRigah")
+THEN
+RESPONSE #100
+ActionOverride("BDRigah",DestroySelf())
+END
