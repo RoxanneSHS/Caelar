@@ -1,3 +1,5 @@
+BEGIN BDCaeen1
+
 EXTEND_TOP Slilmat 0 #2
 IF~Global("BD_Visited_BD5300","Global",3) Global("Kanag","LOCALS",0)~THEN REPLY ~We like to inquire about Kelemvor if we might.~DO~SetGlobal("Kanag","LOCALS",1)~GOTO Caequest1s
 END 
@@ -19,8 +21,8 @@ IF~~THEN Slilmat Caequest2s
 ~Mh...this is an exceptional story. But you are one to be believed, so much is true.~
 =~There is rumoured to be such a place on the Sword Coast, it is called Kanaglym. Some say it is located below the old Dragonspear Castle and guarded by a shadow dragon or sorts. That is all I know, the rest is to you, heroes.~
 END
-++~Thank you for your time, priest. Take this.~DO~TakePartyGold(150)~EXIT
-++~Thank you for nothing, priest. We knew that much already. Take this.~DO~TakePartyGold(50)~EXIT
+++~Thank you for your time, priest. Take this.~DO~TakePartyGold(150) Wait(2) AddJournalEntry(@14,QUEST)~EXIT
+++~Thank you for nothing, priest. We knew that much already. Take this.~DO~TakePartyGold(50) Wait(2) AddJournalEntry(@14,QUEST)~EXIT
 
 CHAIN
 IF~~THEN Wilmat Caequest1w
@@ -35,5 +37,21 @@ IF~~THEN Wilmat Caequest2w
 ~Mh...this is an exceptional story. But you are one to be believed, so much is true.~
 =~There is rumoured to be such a place on the Sword Coast, it is called Kanaglym. Some say it is located below the old Dragonspear Castle and guarded by a shadow dragon or sorts. That is all I know, the rest is to you, heroes.~
 END
-++~Thank you for your time, priest. Take this.~DO~TakePartyGold(150)~EXIT
-++~Thank you for nothing, priest. We knew that much already. Take this.~DO~TakePartyGold(50)~EXIT
+++~Thank you for your time, priest. Take this.~DO~TakePartyGold(150) Wait(2) AddJournalEntry(@14,QUEST)~EXIT
+++~Thank you for nothing, priest. We knew that much already. Take this.~DO~TakePartyGold(50) Wait(2) AddJournalEntry(@14,QUEST)~EXIT
+
+CHAIN
+IF~Global("BD_NewQuest","BD5000",1)~THEN BDCaeen1 welcome
+~See who's coming.~
+DO~SetGlobal("BD_NewQuest","BD5000",2)~
+==BDCaeen1 IF~InParty("BDCaelar")~THEN~Our *Shining Lady* and her Bhaalspawn, the very ones that caused our mysery and defeat.~
+==BDCaeen1 IF~!InParty("BDCaelar")~THEN~Caelar's Bhaalspawn, the very ones that caused our mysery and defeat.~
+==BDCaelar IF~InParty("BDCaelar")~THEN~You were always good in shifting the blame to others, Burthon, the coward. What happened to you after the crusade is nothing but your own doing.~
+END
+IF~!InParty("BDCaelar")~THEN REPLY~You were always good in shifting the blame to others, coward. I had nothing to do with your fate.~+ welcome2
+++~I don't even know who you are. Get lost before things escalate.~+ welcome2
+++~I have no issue with any of you. I just need to enter that cave over there.~+ welcome2
+
+CHAIN
+IF~~THEN BDCaeen1 welcome2
+~Men, they carry our belongings on their bodies. Let's get back what is ours.~DO~Enemy() Shout(ASSIST)~EXIT

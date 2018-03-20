@@ -84,7 +84,7 @@ IF~~THEN BDAUN Plot16
 ~Caelar is an Argent, she is an aasimar, she will not break and she will not be destroyed. But she will be purified. Yes, she will be humbled and suffering from it. But she will never again be the *Shining Lady*. Her inherited power will give her the strength to make something out of this.~
 =~Bhaalspawn, of all the people in the Realms you should be the one to understand her. Like you shape yourself with the heritage you carry and the deeds you did and will do, so does she.~
 =~Give her this chance just like you would asks the powers that are to give youself that chance.~
-=~Say nothing, <CHARNAME>, contemplate my words. Your decision will answer for you.~DO~RunAwayFrom(Player1,20)~EXIT
+=~Say nothing, <CHARNAME>, contemplate my words. Your decision will answer for you.~DO~AddJournalEntry(@12,QUEST) Wait(2) RunAwayFrom(Player1,20)~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("BDEEAunplot","Global",4) Global("MelissanYagaKillJob","GLOBAL",0)~THEN PPGUY01 GoHell
@@ -179,9 +179,9 @@ IF~~THEN BDCaelar Uncle2
 END
 ++~I don't see you changed much, Caelar. But it's not for me to judge. I see the opportunity to finish the Dragonspear crusade and have a competent companion at the same time. I agree.~DO~JoinParty()~EXIT
 ++~There may be some chance to repent and repair the damage your crusade has done. I'm sure that an Argent will hold her word and I know you can use your sword well. Join me.~DO~JoinParty()~EXIT
-++~What I have done until now is exactly how much I'm willing to do for you, *Shining Lady*. And it's already more than you deserved. Go with your uncle and learn about humbleness.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
+++~What I have done until now is exactly how much I'm willing to do for you, *Shining Lady*. And it's already more than you deserved. Go with your uncle and learn about humbleness.~DO~AddJournalEntry(@15,QUEST_DONE) Wait(2) RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
 ++~I have to think about this all. You may stay here for the time. I will decide about your proposal later.~+ Uncle3
 
 CHAIN
 IF~~THEN BDCaelar Uncle3
-~Such hesitation from one who is on the brink to become a Power of the Realms. I made a mistake to expect too much from you, <CHARNAME>. I still have enough strength to follow my mission alone.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
+~Such hesitation from one who is on the brink to become a Power of the Realms. I made a mistake to expect too much from you, <CHARNAME>. I still have enough strength to follow my mission alone.~DO~AddJournalEntry(@15,QUEST_DONE) Wait(2) RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT

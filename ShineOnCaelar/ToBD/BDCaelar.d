@@ -42,12 +42,12 @@ IF~Global("BD_Visited_BD5300","Global",0) InParty("CVSandr")~THEN REPLY~Sandrah 
 CHAIN
 IF~~THEN BDCaelar AfterPlane4a
 ~I had a priest of Ilmater among my advisors during the crusade. It may be worth inquiring at one of their temples about the issue? I mean before we blindly return to *that* place...~
-DO~SetGlobal("BD_Visited_BD5300","Global",3)~
+DO~SetGlobal("BD_Visited_BD5300","Global",3) Wait(2) AddJournalEntry(@14,QUEST)~
 ==IF_FILE_EXISTS C0Sir25J IF~InParty("C0Sirene")~ THEN ~Our priests are well educated in the matters of Kelemvor, I'm sorry that my own education is not as deep to be of help.~EXIT 
 
 CHAIN
 IF~~THEN BDCaelar AfterPlane4b
 ~I had a priest of Ilmater among my advisors during the crusade. It may be worth inquiring at one of their temples about the issue? Illmater's followers seem to know something about Kelemvor as well.~
-DO~SetGlobal("BD_Visited_BD5300","Global",3)~
+DO~SetGlobal("BD_Visited_BD5300","Global",3) Wait(2) AddJournalEntry(@14,QUEST)~
 ==IF_FILE_EXISTS C0Sir25J IF~InParty("C0Sirene")~ THEN ~Our priests are well educated in the matters of Kelemvor, I'm sorry that my own education is not as deep to be of help.~EXIT 
 

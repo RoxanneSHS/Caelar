@@ -1,0 +1,19 @@
+IF
+Global("BD_Visited_BD5300","Global",3)
+Global("BD_NewQuest","BD5000",0)
+THEN
+RESPONSE #100
+SetGlobal("BD_NewQuest","BD5000",1)
+CloseDoor("Door01")
+CreateCreature("BDCAEEN1",[2740.1276],0)
+CreateCreature("BDCAEEN2",[2922.1258],7)
+CreateCreature("bdcrux30",[2525.1058],11)
+CreateCreature("bdcrus23",[2357.1048],2)
+CreateCreature("bdcrus34",[3103.1340],4)
+CreateCreature("bdcrux30",[2225.1058],11)
+CreateCreature("bdcrus23",[2257.1048],2)
+CreateCreature("bdcrus34",[2903.940],4)
+CreateCreature("bdcrux30",[2525.958],11)
+CreateCreature("bdcrus23",[2357.948],2)
+CreateCreature("bdcrus34",[3103.940],4)
+END
