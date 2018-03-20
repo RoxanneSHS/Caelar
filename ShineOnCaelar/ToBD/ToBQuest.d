@@ -1,9 +1,9 @@
 EXTEND_TOP Slilmat 0 #2
-IF~Global("BD_Visited_BD5300","Global",3) Global("Kanag","LOCALS",0)~THEN REPLY ~We like to inquire about Kelemvor if we might~DO~SetGlobal("Kanag","LOCALS",1)~GOTO Caequest1s
+IF~Global("BD_Visited_BD5300","Global",3) Global("Kanag","LOCALS",0)~THEN REPLY ~We like to inquire about Kelemvor if we might.~DO~SetGlobal("Kanag","LOCALS",1)~GOTO Caequest1s
 END 
 
 EXTEND_TOP Wilmat 0 #2
-IF~Global("BD_Visited_BD5300","Global",3) Global("Kanag","LOCALS",0)~THEN REPLY ~We like to inquire about Kelemvor if we might~DO~SetGlobal("Kanag","LOCALS",1)~GOTO Caequest1w
+IF~Global("BD_Visited_BD5300","Global",3) Global("Kanag","LOCALS",0)~THEN REPLY ~We like to inquire about Kelemvor if we might.~DO~SetGlobal("Kanag","LOCALS",1)~GOTO Caequest1w
 END  
 
 CHAIN
