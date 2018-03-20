@@ -166,7 +166,7 @@ DO~SetGlobal("BDEEAunplot","Global",8)~
 ==BDCaelar~Very well, uncle.~
 =~<CHARNAME>, my time in Avernus was not completely in vain. Apart from what I learned about myself and my mistakes, I was able to actually gain a significant number of souls of those who deemed lost. This soul globe contains them. I swear you my loyalty in the events to come if you promise to help me bring those souls to rest.~
 ==BDAUN~<CHARNAME>, I beg of you, agree to that offer. Save your fate and hers and that of the departed.~
-=~I will return to Bridgefort, my part in this is finished.~DO~MoveBetweenAreas("bd2000",[3204.1405],4)~
+=~I will return to Bridgefort, my part in this is finished.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3204.1405],4)~
 ==BDCaelar~I know where to find you, uncle, in case I can't convince <CHARNAME> that out joint forces are what is needed now.~
 END
 ++~What is this task you ask of me, Caelar, that will gain me your loyalty?~+ Uncle2
@@ -179,9 +179,9 @@ IF~~THEN BDCaelar Uncle2
 END
 ++~I don't see you changed much, Caelar. But it's not for me to judge. I see the opportunity to finish the Dragonspear crusade and have a competent companion at the same time. I agree.~DO~JoinParty()~EXIT
 ++~There may be some chance to repent and repair the damage your crusade has done. I'm sure that an Argent will hold her word and I know you can use your sword well. Join me.~DO~JoinParty()~EXIT
-++~What I have done until now is exactly how much I'm willing to do for you, *Shining Lady*. And it's already more than you deserved. Go with your uncle and learn about humbleness.~DO~MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
+++~What I have done until now is exactly how much I'm willing to do for you, *Shining Lady*. And it's already more than you deserved. Go with your uncle and learn about humbleness.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
 ++~I have to think about this all. You may stay here for the time. I will decide about your proposal later.~+ Uncle3
 
 CHAIN
 IF~~THEN BDCaelar Uncle3
-~Such hesitation from one who is on the brink to become a Power of the Realms. I made a mistake to expect too much from you, <CHARNAME>. I still have enough strength to follow my mission alone.~DO~MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
+~Such hesitation from one who is on the brink to become a Power of the Realms. I made a mistake to expect too much from you, <CHARNAME>. I still have enough strength to follow my mission alone.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT

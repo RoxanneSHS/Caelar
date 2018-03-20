@@ -38,7 +38,9 @@ END
 IF
 Global("BDEEAunplot","Global",8)
 Global("BD_ToB_CaelarD","Global",0)
-!AreaCheck("ar4500")
+!AreaCheck("ar5000")
+AreaType(OUTDOOR)
+CombatCounter(0)
 InParty(Myself)
 THEN
 RESPONSE #100
