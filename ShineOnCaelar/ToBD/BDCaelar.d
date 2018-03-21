@@ -82,3 +82,22 @@ IF~~THEN BDCaelar Volu2
 CHAIN
 IF~~THEN BDCaelar Hephi
 ~The only one with a hidden agenda was Hephernaan, as we both well know. And truly hidden it was. My goal were the souls in Avernus.~EXTERN BDCaelar Many
+
+CHAIN
+IF~Global("BD_ToB_CaelarD","Global",6) IsGabber(Player1) !RealGlobalTimerExpired("BD_ToB_CaelarT","Locals")~THEN BDCaelar NoPIDs
+~(Her shining blue eyes mask all expression her face might reveal. She is not in the mood for a conversation right now) ~EXIT
+
+CHAIN
+IF~Global("BD_ToB_CaelarD","Global",6) IsGabber(Player1) RealGlobalTimerExpired("BD_ToB_CaelarT","Locals")~THEN BDCaelar PIDs
+~(Her shining blue eyes mask all expression her face might reveal.) Yes?~
+END
+IF~Global("BD_eyes","Locals",0)~THEN REPLY~Can you explain what's the matter with your eyes? ~DO~SetGlobal("BD_eyes","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ CaeEyes1
+IF~Global("BD_hepha","Locals",0)~THEN REPLY~How did you meet Hephernaan, why did he get such an influence over you? ~DO~SetGlobal("BD_hepha","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~Global("BD_crusa","Locals",0)~THEN REPLY~Why did you need the crusade for your goals? ~DO~SetGlobal("BD_crusa","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~Global("BD_crime","Locals",0)~THEN REPLY~Who ordered all those crimes that the crusade is guilty of? ~DO~SetGlobal("BD_crime","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~Global("BD_futu","Locals",0)GlobalGT("Chapter","Global",20)~THEN REPLY~What do you expect to achieve by serving my purpose? ~DO~SetGlobal("BD_futu","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~~THEN REPLY~Ah, nothing, Caelar. ~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+
+CHAIN
+IF~~THEN BDCaelar CaeEyes1
+~I am assimar as you well know. My eyes are part of my celestial heritage. I can't hide my anchestory nor did I ever intend to hide it. TBC...~EXIT

@@ -75,13 +75,15 @@ RealSetGlobalTimer("BD_ToB_CaelarT","Locals",2100)
 END
 
 IF
+OR(2)
 Global("BD_ToB_CaelarD","Global",3)
+Global("BD_ToB_CaelarD","Global",5)
 RealGlobalTimerExpired("BD_ToB_CaelarT","Locals")
 !AreaCheck("ar4500")
 AreaType(DUNGEON)
 THEN
 RESPONSE #100
-SetGlobal("BD_ToB_CaelarD","Global",4)
+IncrementGlobal("BD_ToB_CaelarD","Global",1)
 END
 
 IF
