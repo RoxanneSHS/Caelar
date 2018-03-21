@@ -33,6 +33,13 @@ Global("BDNedlock","BD5100",0)
 THEN
 RESPONSE #100
 SetGlobal("BDNedlock","BD5100",1)
-CreateCreature("bdnederl",[940.2363],7)
+CreateCreature("eenederl",[940.2463],7)
+CreateCreature("eedagf59",[840.2463],7)
+CreateCreature("eedagf38",[940.2483],8)
+CreateCreature("eedagf51",[960.2493],7)
+CreateCreature("eedagf54",[1140.2363],4)
+CreateCreature("eedagf49",[1100.2300],3)
+CreateCreature("eedagf59",[1230.2463],12)
+CreateCreature("eedagf38",[670.2473],10)
 END
 

@@ -73,3 +73,41 @@ IF~~THEN BDCaelar AtChasm2
 CHAIN
 IF~~THEN BDCaelar AtChasm3
 ~Sounds like the best option to me, <CHARNAME>.~EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("BDNedlock","BD5100",1)~THEN BDNederl InTob1
+~Ha, now look what we found, this must be the former so-called hero of Baldur's Gate, bah.~
+DO~SetGlobal("BDNedlock","BD5100",2)~
+==BDNederl IF~InParty("BDCaelar")~THEN~Even worse, <PRO_HESHE> now openly serves the damned lady who shines no more.~
+==BDCaelar IF~InParty("BDCaelar")~THEN~Make no mistake, Marshal. Stay your wrath and use what senses you have. The reason why we were here in Kanaglym was to put the souls of Dragaonspear to rest. The crusade is over forever.~
+END
+IF~InParty("BDCaelar")~THEN REPLY~She speaks the truth, Marshal. I rescued Caelar from Avernus and whatever souls she could secure and we laid them to rest in The Fugue Plane accessible just beyond that portal.~+ InTob2
+IF~!InParty("BDCaelar")~THEN REPLY~Make no mistake, Marshal. The reason why we were here in Kanaglym was to put the souls of Dragaonspear to rest. I rescued Caelar from Avernus and whatever souls she could secure and we laid them to rest in The Fugue Plane accessible just beyond that portal.~+ InTob2
+IF~~THEN REPLY~Get out of my way, fool, I have no more business with you. History is past and I have to follow my fate to Tethyr now.~+ InTob2
+
+CHAIN
+IF~~THEN BDNederl InTob2
+~I'm inclined to believe you, <CHARNAME>. Somehow I always perceived you as a <PRO_MANWOMAN> of honor.~
+=~The price for this outcome has been high. (Sigh), far too high in my humble opinion but that cannot be changed anymore. Too many people made too many mistakes in this matter.~
+=~Can you give me your word that you leave here peacefully and not return anymore?~
+END
+IF~ !InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3P
+IF~!InParty("BDCAelar") !Alignment(Player1,MASK_EVIL)  ~THEN REPLY~ I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3P
+IF~ !InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ~THEN REPLY~I have no quarrel with you and there is no need for hostility, Marshal. I'll just be on my way.~+ InTob3P
+IF~!InParty("BDCAelar") Alignment(Player1,MASK_EVIL) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3F
+IF~!InParty("BDCAelar") Alignment(Player1,MASK_EVIL) ~THEN REPLY~I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3F
+IF~!InParty("BDCAelar") Alignment(Player1,MASK_EVIL) ~THEN REPLY~I have no quarrel with you and there is no need for hostility, Marshal. I'll just be on my way.~+ InTob3F
+IF~InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ReputationGT(Player1,15) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3P
+IF~InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ReputationGT(Player1,15) ~THEN REPLY~ I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3P
+IF~InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ReputationGT(Player1,15) ~THEN REPLY~I have no quarrel with you and there is no need for hostility, Marshal. I'll just be on my way.~+ InTob3P
+IF~InParty("BDCAelar") OR(2) Alignment(Player1,MASK_EVIL) ReputationLT(Player1,16)~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3F
+IF~InParty("BDCAelar") OR(2) Alignment(Player1,MASK_EVIL) ReputationLT(Player1,16)~THEN REPLY~ I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3F
+IF~InParty("BDCAelar") OR(2) Alignment(Player1,MASK_EVIL) ReputationLT(Player1,16) ~THEN REPLY~I have no quarrel with you and there is no need for hostility, Marshal. I'll just be on my way.~+ InTob3F
+
+CHAIN
+IF~~THEN BDNederl InTob3P
+~I will not stand between you and whatever is your destiny. Go in peace.~DO~SetGlobal("BDNedlock","BD5100",3)~EXIT
+
+CHAIN
+IF~~THEN BDNederl InTob3F
+~As much as I'd wished to avoid it, you leave me no choice. I can't let you go, traitor.~DO~SetGlobal("BDNedlock","BD5100",4)~EXIT

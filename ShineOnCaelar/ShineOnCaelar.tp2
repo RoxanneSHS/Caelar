@@ -46,6 +46,7 @@ EXTEND_TOP ~ITPPlane.bcs~ ~ShineOnCaelar/baf/ppguy.baf~
 EXTEND_TOP ~BDFugue.bcs~ ~ShineOnCaelar/baf/BDFugue.baf~
 
 COMPILE ~ShineOnCaelar/ToBd~
+COMPILE ~ShineOnCaelar/baf/ee5100bd.baf~
 
 COPY ~ShineOnCaelar/Itm/CMISC8Q.BAM~ ~override~
 COPY ~ShineOnCaelar/Itm/IMISC8Q.BAM~ ~override~
@@ -76,3 +77,21 @@ SAY NAME2 @11
 COPY ~ShineOnCaelar/baf/EEFugue.2DA~ ~override/EEFugue.2DA~
 REPLACE ~99990~ @16
 REPLACE ~99991~ @16
+
+COPY_EXISTING ~bdnederl.cre~ ~override/eenederl.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+COPY_EXISTING ~bddagf59.cre~ ~override/eedagf59.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+COPY_EXISTING ~bddagf38.cre~ ~override/eedagf38.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+COPY_EXISTING ~bddagf51.cre~ ~override/eedagf51.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+COPY_EXISTING ~bddagf54.cre~ ~override/eedagf54.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+COPY_EXISTING ~bddagf49.cre~ ~override/eedagf49.cre~
+WRITE_ASCII 0x250 ~ee5100bd~ #8

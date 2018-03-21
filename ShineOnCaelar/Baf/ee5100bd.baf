@@ -1,0 +1,24 @@
+IF
+Global("BDNedlock","BD5100",1)
+Name("BDNederl",Myself)
+See([PC])
+Delay(6)
+THEN
+RESPONSE #100
+StartDialogNoSet(Player1)
+END
+
+IF
+Global("BDNedlock","BD5100",3)
+THEN
+RESPONSE #100
+EscapeAreaDestroy(70)
+END
+
+IF
+Global("BDNedlock","BD5100",4)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
