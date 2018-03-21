@@ -11,6 +11,11 @@ IF~~THEN BDCaelar Kicked2
 ~I will seek my uncle Aun. Good luck on your way.~DO~RunAwayFrom(Player1,20) Wait(4) MoveBetweenAreas("bd2000",[3224.1415],5)~EXIT
 
 CHAIN
+IF~Global("BD_Visited_BD5300","Global",31)~THEN BDCaelar KickedSelf
+~So you have broken our pact, <CHARNAME>. I should have known you would never help me to deliver those souls to Kelemvor. There is no reason for me to follow you anymore. I stand true to my task and will perform it alone then.~
+DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
+
+CHAIN
 IF~Global("BD_ToB_CaelarD","Global",1)~THEN BDCaelar AfterPlane1
 ~Ah, fresh air in my lungs! I almost forgot how it feels to have an open sky above. No wonder that the drow turned into...what frow are.~
 DO~SetGlobal("BD_ToB_CaelarD","Global",2)~

@@ -87,10 +87,20 @@ IncrementGlobal("BD_ToB_CaelarD","Global",1)
 END
 
 IF
-OR(3)
+Global("BD_Visited_BD5300","Global",3)
+GlobalGT("Chapter","Global",20)
+InParty(Myself)
+THEN
+RESPONSE #100
+SetGlobal("BD_Visited_BD5300","Global",31)
+END
+
+IF
+OR(4)
 Global("BD_ToB_CaelarD","Global",1)
 Global("BD_ToB_CaelarD","Global",4)
 Global("BD_Visited_BD5300","Global",4)
+Global("BD_Visited_BD5300","Global",31)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])
