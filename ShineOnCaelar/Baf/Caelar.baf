@@ -65,9 +65,29 @@ SetGlobal("BD_Visited_BD5300","Global",4)
 END
 
 IF
+Global("BD_Visited_BD5300","Global",6)
+Global("BD_ToB_CaelarD","Global",2)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("BD_ToB_CaelarD","Global",3)
+RealSetGlobalTimer("BD_ToB_CaelarT","Locals",2100)
+END
+
+IF
+Global("BD_ToB_CaelarD","Global",3)
+RealGlobalTimerExpired("BD_ToB_CaelarT","Locals")
+!AreaCheck("ar4500")
+AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("BD_ToB_CaelarD","Global",4)
+END
+
+IF
 OR(3)
 Global("BD_ToB_CaelarD","Global",1)
-Global("BD_ToB_CaelarD","Global",3)
+Global("BD_ToB_CaelarD","Global",4)
 Global("BD_Visited_BD5300","Global",4)
 CombatCounter(0)
 InParty(Myself)

@@ -51,3 +51,34 @@ IF~~THEN BDCaelar AfterPlane4b
 DO~SetGlobal("BD_Visited_BD5300","Global",3) Wait(2) AddJournalEntry(@14,QUEST)~
 ==IF_FILE_EXISTS C0Sir25J IF~InParty("C0Sirene")~ THEN ~Our priests are well educated in the matters of Kelemvor, I'm sorry that my own education is not as deep to be of help.~EXIT 
 
+CHAIN
+IF~Global("BD_ToB_CaelarD","Global",4)~ THEN BDCaelar Volu1
+~It is quite satisfactory that we brought the crusade to some acceptable conclusion with our delivery of the souls to Kanaglym.~
+DO~SetGlobal("BD_ToB_CaelarD","Global",5)~
+END
+++~This is your interpretation - and yours alone. I can see no satisfaction in bringing those souls to rest, not after all the bloodshed and suffering your stupid crusade had caused.~+ Souls
+++~I kept my promise and that is all I have to say about this topic. Now I have your word that you'll be loyal to MY task. Spare me your damned crusade and any attempt to justify your deeds, I'm not listening.~+ Noword
+++~Hundreds of dead crusaders and other victims on the Sword Coast are a price that is no way an adequate sacrifice for those who were already dead and lost.~+ Volu2 
+
+CHAIN
+IF~~THEN BDCaelar Noword
+~Do not doubt the word and loyalty of an Argent, <CHARNAME>. You're not my judge but I'll measure you according to how you will use your heritage and prospects.~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",3100)~EXIT
+
+CHAIN
+IF~~THEN BDCaelar Souls
+~Of all people, you should value a soul more than any other. Would you have left yours to that Exile? Didn't you leave a bloody trail across Amn for just one reason - YOUR soul. My crusade was to free many souls and not one of them was my own.~
+END
+++~Your aim was ONE soul, Aun's soul, and the only reason it had to suffer was due to your mistake.~+ Many
+++~You misused the motivation of those following you with a hidden agenda. Stop finding excuses for yourself.~+ Hephi
+
+CHAIN
+IF~~THEN BDCaelar Many
+~Aun's soul was part of a greater picture. My deeds at Kamaglym should have proven that.~EXTERN BDCaelar Noword
+
+CHAIN
+IF~~THEN BDCaelar Volu2 
+~The crusaders were volunteers. Each of them had their own personal reason to follow us. Each of them found a justification to be part of the movement.~EXTERN BDCaelar Souls
+
+CHAIN
+IF~~THEN BDCaelar Hephi
+~The only one with a hidden agenda was Hephernaan, as we both well know. And truly hidden it was. My goal were the souls in Avernus.~EXTERN BDCaelar Many
