@@ -97,9 +97,9 @@ IF~Global("BD_ToB_CaelarD","Global",6) IsGabber(Player1) RealGlobalTimerExpired(
 ~(Her shining blue eyes mask all expression her face might reveal.) Yes?~
 END
 IF~Global("BD_eyes","Locals",0)~THEN REPLY~Can you explain what's the matter with your eyes? ~DO~SetGlobal("BD_eyes","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ CaeEyes1
-IF~Global("BD_hepha","Locals",0)~THEN REPLY~How did you meet Hephernaan, why did he get such an influence over you? ~DO~SetGlobal("BD_hepha","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
-IF~Global("BD_crusa","Locals",0)~THEN REPLY~Why did you need the crusade for your goals? ~DO~SetGlobal("BD_crusa","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
-IF~Global("BD_crime","Locals",0)~THEN REPLY~Who ordered all those crimes that the crusade is guilty of? ~DO~SetGlobal("BD_crime","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~Global("BD_hepha","Locals",0)~THEN REPLY~How did you meet Hephernaan, why did he get such an influence over you? ~DO~SetGlobal("BD_hepha","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ Hepham1
+IF~Global("BD_crusa","Locals",0) ~THEN REPLY~Why did you need me and Imoen for your goals? ~DO~SetGlobal("BD_crusa","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ blood1
+IF~Global("BD_crime","Locals",0) Global("BD_crusa","Locals",1)~THEN REPLY~Who ordered all those crimes that the crusade is guilty of? ~DO~SetGlobal("BD_crime","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ crime1
 IF~Global("BD_futu","Locals",0)GlobalGT("Chapter","Global",20)~THEN REPLY~What do you expect to achieve by serving my purpose? ~DO~SetGlobal("BD_futu","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ CaeServe1
 IF~~THEN REPLY~Ah, nothing, Caelar. ~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
 
@@ -147,14 +147,80 @@ END
 
 CHAIN
 IF~~THEN BDCaelar CaeServe3
-~I am not talking about a new god of murder, <CHARNAME>, I refer to goodhood as a pure form of power. YOU will be the one to define your portfolio. I anticipate it to be one that I can associate myself with. I may become one of those to serve you beyond your mortal tasks.~
+~I am not talking about a new god of murder, <CHARNAME>, I refer to godhood as a pure form of power. YOU will be the one to define your portfolio. I anticipate it to be one that I can associate myself with. I may become one of those to serve you beyond your mortal tasks.~
 =~Be warned however. I will not stand idle if Bhaal should corrupt you.~EXTERN BDCaelar PidFin
+
+CHAIN
+IF~~THEN BDCaelar Hepham1
+~After I lost uncle Aun to Avernus, I made demands at the order of the Aster to take unflinching action against the forces of evil. My demands fell on deafened ears. I left the knighthood, seeking a means by which to fulfill my righteous vision.~
+END
+++~You could be glad they did not punish you for your failure.~+ Hepham2
+++~They had no means to do it, even if they had intended to help you.~+ Hepham2
+++~Such tin heads are never of use when a real task needs to be solved.~+ Hepham2
+
+CHAIN
+IF~~THEN BDCaelar Hepham2
+~The "Revered Brother" Hephernaan appeared just in my hour of deepest despair. A wolf in a robe, but he smiled and lied well enough, and he was the first to nurture my hope to reach Avernus.~
+=~I left Waterdeep alone, learning all I could of the evils that threaten the Prime. The knowledge I gained filled me with anguish. ~
+=~One day I reached a bridge overlooking the Winding Way. I looked into the dark waters flowing below and questioned all I had once believed to be true. Perhaps I was wrong. Perhaps I had not been chosen to rid the world of evil. It was in this, my greatest moment of doubt, that Hephernaan appeared. He claimed to serve not one god or pantheon, but all of them. I accepted this heresy.~
+END
+++~A mistake to worsen all the mistakes already made.~+ Hepham3
+++~Desperation lets us choose dubious company at times.~+ Hepham3
+++~I'm no stranger to such moments of doubt myself.~+ Hepham3
+
+CHAIN
+IF~~THEN BDCaelar Hepham3
+~We spoke until the next morning...And when my tale was told, he said, "The people of the land long for righteousness. The gods have blessed you with a vision. I know what you must do."~
+END
+++~And so he planted his ideas into you!~+ Hepham4
+++~His master knew of your desperation and sent you an angel, eh, devil right on time.~+ Hepham4
+
+CHAIN
+IF~~THEN BDCaelar Hepham4
+~He told me about Dragonspear Castle and the portal and that my divine blood would open it. He also advised me that we would need an army to enter Avernus.~
+=~Knowing that we would get no help from the Aster, we called out to the people of Faerun. From the coasts and the plains, the mountains and the deserts, men and women of courage and righteous conviction answered, flocking to our banner.~EXTERN BDCaelar PidFin
+
+CHAIN
+IF~~THEN BDCaelar blood1
+~We - Hephernaan thought my aasimar blood might open the portal to Avernus, but its divine power had been diluted over generations. We needed the blood of a god, or the next best thing - the child of a god. Your appearance as Sarevok's sibling was just bad timing - for you.~
+END
+++~Just that this godchild didn't want to give <PRO_HISHER> blood voluntarily.~+ blood2
+++~Ah, yes, kill a god or a godchild, why set yourself any limit in ambition.~+ blood2
+++~At least you considered to sacrifice yourself in the first place.~+ blood3
+
+CHAIN
+IF~~THEN BDCaelar blood3
+~I never hesitated a moment...but it wasn't to be. And in hindsight that was a good thing. Otherwise Hephernaan might have suceeded in the end.~EXTERN BDCaelar blood2
+
+CHAIN
+IF~~THEN BDCaelar blood2
+~I never wanted you dead. I needed you alive. The men I sent to Baldur's Gate - good and righteous men - were meant to capture you.~
+=~Later I tried my charisma on you and tried to let me see my vision. It were your so-called allies who tried to keep us apart.~ EXTERN BDCaelar PidFin
+
+CHAIN
+IF~~THEN BDCaelar crime1
+~Nobody ever ordered any crimes, <CHARNAME>. Listen very carefully, you have been fed with as many lies from your *friends* in Baldur's Gate as I had to swallow from my *advisor*~
+END
+++~Explain.~+ crime2
+++~You have an excuse for yourself for everything, haven't you.~+ crime2
+++~You may have been used but surely not me.~+ crime2
+
+CHAIN
+IF~~THEN BDCaelar crime2
+~When we discovered that our crusader army needed to march to the abandoned Dragonspear Castle where the portal was, I sent emissaries to the Dukes to inform them and also to ask for help and supplies. The Dukes denied my request. They claimed that Dragonspear Castle was a strategic location for them and a foreign army there was a military threat.~
+=~I went to a meeting with Duke Silvershield at the Northern Citadel to convince him of our common enemy below the castle. He would not listen. He called me an invader.~
+=~It was Baldur's Gate who declared war on the Crusade, <CHARNAME>. Neither the town, nor the Dukes nor you where our enemies until your allies decided to oppose me.~
+=~I was very concerned about this development. It was never planned to use the crusaders against any other enemy than the fiends of hell. Every loss in a war I didn't want was a personal grief to me.~DO~StartCutSceneMode() Wait(2) StartCutScene("bdcut20m") ~ EXIT
 
 CHAIN
 IF~~THEN BDCaelar PidFin
 ~Does that answer your interogation, <CHARNAME>?~
 END
 ++~Interesting to hear your view first hand instead of relying on second hand information. It makes things appear in a different light.~DO~IncrementGlobal("BD_Cae_Belive","LOCALS",1)~EXIT
-++~You always have a justification for yourself and your deeds. Pepentance is not in your vocabulary, it seems.~EXIT
+++~You always have a justification for yourself and your deeds. Repentance is not in your vocabulary, it seems.~EXIT
 ++~I see what you mean although I can't agree to your self-satisfied interpretation.~DO~IncrementGlobal("BD_Cae_Belive","LOCALS",-1)~EXIT
 ++~Thank you for clarifying things, Caelar.~EXIT
+
+CHAIN
+IF~Global("BD_crime","Locals",1)~THEN BDCaelar crime3
+~I was no warlord and no blood thirsty monster. The crusaders where family to me.~EXTERN BDCaelar PidFin

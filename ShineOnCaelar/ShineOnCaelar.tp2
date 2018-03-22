@@ -46,7 +46,9 @@ EXTEND_TOP ~ITPPlane.bcs~ ~ShineOnCaelar/baf/ppguy.baf~
 EXTEND_TOP ~BDFugue.bcs~ ~ShineOnCaelar/baf/BDFugue.baf~
 
 COMPILE ~ShineOnCaelar/ToBd~
-COMPILE ~ShineOnCaelar/baf/ee5100bd.baf~
+COMPILE 
+~ShineOnCaelar/baf/ee5100bd.baf~
+~ShineOnCaelar/baf/BDCUT20M.BAF~
 
 COPY ~ShineOnCaelar/Itm/CMISC8Q.BAM~ ~override~
 COPY ~ShineOnCaelar/Itm/IMISC8Q.BAM~ ~override~
