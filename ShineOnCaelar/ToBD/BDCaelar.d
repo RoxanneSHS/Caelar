@@ -100,7 +100,7 @@ IF~Global("BD_eyes","Locals",0)~THEN REPLY~Can you explain what's the matter wit
 IF~Global("BD_hepha","Locals",0)~THEN REPLY~How did you meet Hephernaan, why did he get such an influence over you? ~DO~SetGlobal("BD_hepha","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
 IF~Global("BD_crusa","Locals",0)~THEN REPLY~Why did you need the crusade for your goals? ~DO~SetGlobal("BD_crusa","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
 IF~Global("BD_crime","Locals",0)~THEN REPLY~Who ordered all those crimes that the crusade is guilty of? ~DO~SetGlobal("BD_crime","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
-IF~Global("BD_futu","Locals",0)GlobalGT("Chapter","Global",20)~THEN REPLY~What do you expect to achieve by serving my purpose? ~DO~SetGlobal("BD_futu","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
+IF~Global("BD_futu","Locals",0)GlobalGT("Chapter","Global",20)~THEN REPLY~What do you expect to achieve by serving my purpose? ~DO~SetGlobal("BD_futu","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ CaeServe1
 IF~~THEN REPLY~Ah, nothing, Caelar. ~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
 
 CHAIN
@@ -119,6 +119,36 @@ IF~~THEN BDCaelar CaeEyes2
 CHAIN
 IF~~THEN BDCaelar CaeEyes3
 ~Ghaeles, the ancestors I assume are in my bloodline, are knights-errant of the celestials. They are powerful warriors who delight in the hunting and slaying of evil in all its forms,especially fiends, evil dragons, and undead. I feel that urge in my blood and it's my destiny.~EXTERN BDCaelar PidFin
+
+CHAIN
+IF~~THEN BDCaelar CaeServe1
+~My time in Avernus has cured me from my belief in Lathander. I can't see myself associated with the Order of the Aster anymore.~
+END
+++~They won't take you back anyway I guess.~+ CaeServe2a
+++~What does this have to do with me?~+ CaeServe2a
+
+CHAIN
+IF~~THEN BDCaelar CaeServe2a
+~You and I are not that different, don't fool yourself about it. We are born with a heritage and a destiny unlike most others. We have nowhere to go back to anymore and what lies ahead of us is what we shape for ourselves.~
+=~I was just nine years old when I made the mistake of my life. Trying to correct it with the false advice of the Gods and some advisors didn't make things better. Your course was set even prior your birth and further set in motion with Sarevok killing your Gorion.~
+=~Many try to judge you and many think they can judge me. But they all know nothing. And we will proof it to them.~
+END
+++~You and me, we have nothing in common.~+ CaeServe2
+++~That is some food for thought.~+ CaeServe2
+++~You made an error when you were a foolish child, so much is true. But you seem to have learned nothing from it and continue to wreck things up.~+ CaeServe2
+
+CHAIN
+IF~~THEN BDCaelar CaeServe2
+~Maybe I have a clearer view of your destiny than you have yourself, <CHARNAME>. You are bound for great things. Your heritage entitles you just like mine lets me stand out. Your father left you godhood as an option.~
+END
+++~I will never take Bhaal's throne!~+ CaeServe3
+++~You will fall deep from Lathander to Bhaal, Caelar.~+ CaeServe3
+++~So I'm your stepping stone for another army of desctruction? Wasn't the crusade enough for your taste?~+ CaeServe3
+
+CHAIN
+IF~~THEN BDCaelar CaeServe3
+~I am not talking about a new god of murder, <CHARNAME>, I refer to goodhood as a pure form of power. YOU will be the one to define your portfolio. I anticipate it to be one that I can associate myself with. I may become one of those to serve you beyond your mortal tasks.~
+=~Be warned however. I will not stand idle if Bhaal should corrupt you.~EXTERN BDCaelar PidFin
 
 CHAIN
 IF~~THEN BDCaelar PidFin
