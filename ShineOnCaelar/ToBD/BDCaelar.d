@@ -67,7 +67,7 @@ END
 
 CHAIN
 IF~~THEN BDCaelar Noword
-~Do not doubt the word and loyalty of an Argent, <CHARNAME>. You're not my judge but I'll measure you according to how you will use your heritage and prospects.~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",3100)~EXIT
+~Do not doubt the word and loyalty of an Argent, <CHARNAME>. You're not my judge but I'll measure you according to how you will use your heritage and prospects.~DO~SetGlobal("BD_Cae_Belive","LOCALS",10) Wait(2) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",3100)~EXIT
 
 CHAIN
 IF~~THEN BDCaelar Souls
@@ -101,6 +101,8 @@ IF~Global("BD_hepha","Locals",0)~THEN REPLY~How did you meet Hephernaan, why did
 IF~Global("BD_crusa","Locals",0) ~THEN REPLY~Why did you need me and Imoen for your goals? ~DO~SetGlobal("BD_crusa","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ blood1
 IF~Global("BD_crime","Locals",0) Global("BD_crusa","Locals",1)~THEN REPLY~Who ordered all those crimes that the crusade is guilty of? ~DO~SetGlobal("BD_crime","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ crime1
 IF~Global("BD_futu","Locals",0)GlobalGT("Chapter","Global",20)~THEN REPLY~What do you expect to achieve by serving my purpose? ~DO~SetGlobal("BD_futu","Locals",1) RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~+ CaeServe1
+IF~GlobalGT("BD_Cae_Belive","LOCALS",11) GlobalLT("BD_Cae_Belive","LOCALS",20)~THEN REPLY~I come to think that many, myself included, have erred a lot when it comes to the nature of the Shining Lady.~+ JudgeG
+IF~GlobalLT("BD_Cae_Belive","LOCALS",9)~THEN REPLY~Your attitude towards your past deeds seems to confirm everything that made people hate the the Shining Lady.~+ JudgeB
 IF~~THEN REPLY~Ah, nothing, Caelar. ~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Locals",600)~EXIT
 
 CHAIN
@@ -224,3 +226,35 @@ END
 CHAIN
 IF~Global("BD_crime","Locals",1)~THEN BDCaelar crime3
 ~I was no warlord and no blood thirsty monster. The crusaders where family to me.~EXTERN BDCaelar PidFin
+
+CHAIN
+IF~~THEN BDCaelar JudgeG
+~I no longer perceive myself as the Shining Lady. You should have learned that much about me by now.~
+DO~SetGlobal("BD_Cae_Belive","LOCALS",31)~
+END
+++~A childish mistake made by a child and everything that followed was a series of disasters. Whatever you did, things have gone from bad to worse.~+ Uphill
+++~It's a tragic tale of treason and misconception. Good intentions alone are no guarantee for a good outcome.~+ Uphill
+++~It looks like you never were in charge or control of anything accosted to you. You might have had great ideas but no means to get anything done.~ + JudgeB
+++~I truly despise your arrogance and self-righteousness that finds an excuse for all your misdeeds.~+ break1
+
+CHAIN
+IF~~THEN BDCaelar Uphill
+~I have not lost my confidence yet. Since we travel together, I see that great things can be achieved if we work together. Your leadership and my contributions will solve this crisis. The smoldering flame that is Caelar Argent may soon be shining bright again.~EXIT
+
+CHAIN
+IF~~THEN BDCaelar JudgeB
+~Is that true for yourself as well, do you hate me?~
+DO~SetGlobal("BD_Cae_Belive","LOCALS",21)~
+END
+++~I truly despise your arrogance and self-righteousness that finds an excuse for all your misdeeds.~+ break1 
+++~No. If you ever find the courage to stand to your mistakes, there is a small chance that you learn a bit.~+ Uphill 
+
+CHAIN
+IF~~THEN BDCaelar break1 
+~If that is what you think of me still...even after you learned the truth about those past events from my own lips...~
+=~There is only one thing for us to do. Let us agree to break our pact. I gave you my word after Kanaglym but now I ask you to let me go from your service. ~
+END
+++~This is probably the best. May you find whatever light there waits for you for guidance.~ DO~LeaveParty() EscapeAreaDestroy(55)~EXIT
+++~I don't give up that easily, Caelar. Your word of honor binds you, so you have to endure my further lecturing you. Try to like it. ~EXIT
+++~I'm baffled by your use of terms like *honor* still. You're a lost case, it's best you leave.~DO~LeaveParty() EscapeAreaDestroy(55)~EXIT
+++~You're still a useful companion. One like I will need in the days and weeks to come. Keep your opinions to yourself and I'll spare you mine. Let's move on.~EXIT
