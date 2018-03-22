@@ -112,16 +112,19 @@ END
 ++~Aasimar descend from creatures of pure good alignment, but while predisposed to good alignments, aasimar are by no means always good.~+ CaeEyes3
 ++~I read at Candlekeep that most aasimar are destined to become paladins.~+ CaeEyes3
 
+CHAIN
 IF~~THEN BDCaelar CaeEyes2
 ~Those are knights-errant of the celestials. They are powerful warriors who delight in the hunting and slaying of evil in all its forms,especially fiends, evil dragons, and undead. I feel that urge in my blood and it's my destiny.~EXTERN BDCaelar PidFin
 
+CHAIN
 IF~~THEN BDCaelar CaeEyes3
 ~Ghaeles, the ancestors I assume are in my bloodline, are knights-errant of the celestials. They are powerful warriors who delight in the hunting and slaying of evil in all its forms,especially fiends, evil dragons, and undead. I feel that urge in my blood and it's my destiny.~EXTERN BDCaelar PidFin
 
 CHAIN
 IF~~THEN BDCaelar PidFin
 ~Does that answer your interogation, <CHARNAME>?~
+END
 ++~Interesting to hear your view first hand instead of relying on second hand information. It makes things appear in a different light.~DO~IncrementGlobal("BD_Cae_Belive","LOCALS",1)~EXIT
-++You always have a justification for yourself and your deeds. Pepentance is not in your vocabulary, it seems.~EXIT
+++~You always have a justification for yourself and your deeds. Pepentance is not in your vocabulary, it seems.~EXIT
 ++~I see what you mean although I can't agree to your self-satisfied interpretation.~DO~IncrementGlobal("BD_Cae_Belive","LOCALS",-1)~EXIT
 ++~Thank you for clarifying things, Caelar.~EXIT
