@@ -175,7 +175,11 @@ IF~~THEN BDCaelar Hepham3
 ~We spoke until the next morning...And when my tale was told, he said, "The people of the land long for righteousness. The gods have blessed you with a vision. I know what you must do."~
 END
 ++~And so he planted his ideas into you!~+ Hepham4
-++~His master knew of your desperation and sent you an angel, eh, devil right on time.~+ Hepham4
+++~His master knew of your desperation and sent you an angel, eh, devil right on time.~+ Hepham4a
+
+CHAIN
+IF~~THEN BDCaelar Hepham4a
+~A Baatezu, to be precise. And in hindsight all of it may have been Belhifet's plan to get more souls into Avernus...Anyway back to the facts we know.~EXTERN BDCaelar Hepham4
 
 CHAIN
 IF~~THEN BDCaelar Hepham4
