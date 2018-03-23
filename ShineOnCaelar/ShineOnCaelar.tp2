@@ -44,6 +44,7 @@ EXTEND_TOP ~ar5004.bcs~ ~ShineOnCaelar/baf/ar5004.baf~
 EXTEND_TOP ~BDAun.bcs~ ~ShineOnCaelar/baf/aun.baf~
 EXTEND_TOP ~ITPPlane.bcs~ ~ShineOnCaelar/baf/ppguy.baf~
 EXTEND_TOP ~BDFugue.bcs~ ~ShineOnCaelar/baf/BDFugue.baf~
+EXTEND_TOP ~ar6200.bcs~ ~ShineOnCaelar/baf/ar6200.baf~
 
 COMPILE ~ShineOnCaelar/ToBd~
 COMPILE 
@@ -80,6 +81,15 @@ COPY ~ShineOnCaelar/baf/EEFugue.2DA~ ~override/EEFugue.2DA~
 REPLACE ~99990~ @16
 REPLACE ~99991~ @16
 
+COPY ~ShineOnCaelar/baf/EECaeEP.2da~ ~override/EECaeEP1.2da~
+REPLACE ~99991~ @17
+
+COPY ~ShineOnCaelar/baf/EECaeEP.2da~ ~override/EECaeEP2.2da~
+REPLACE ~99991~ @18
+
+COPY ~ShineOnCaelar/baf/EECaeEP.2da~ ~override/EECaeEP3.2da~
+REPLACE ~99991~ @19
+
 COPY_EXISTING ~bdnederl.cre~ ~override/eenederl.cre~
 WRITE_ASCII 0x250 ~ee5100bd~ #8
 
@@ -97,3 +107,10 @@ WRITE_ASCII 0x250 ~ee5100bd~ #8
 
 COPY_EXISTING ~bddagf49.cre~ ~override/eedagf49.cre~
 WRITE_ASCII 0x250 ~ee5100bd~ #8
+
+ACTION_IF FILE_EXISTS_IN_GAME ~LRIrenic.cre~ THEN BEGIN
+COMPILE ~ShineOnCaelar/ToBD/Irenicus.d~
+PRINT ~ Longer Road detected - Caelar Jon part added~
+END ELSE BEGIN
+  PRINT ~Longer Road not detected - skipped ~
+END

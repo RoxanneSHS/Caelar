@@ -150,3 +150,70 @@ THEN
 RESPONSE #100
 StartDialogNoSet("BDCaelar")
 END
+
+IF
+InParty("LRIrenic")
+Global("CaeJonel","Locals",0)
+!AreaCheck("ar4500")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CaeJonel","Locals",1)
+END
+
+IF
+InParty("LRIrenic")
+Global("CaeJonel","Locals",2)
+GlobalGT("Chapter","Global",20)
+!AreaCheck("ar4500")
+OR(3)
+Dead("Sendai")
+Dead("Abazigal")
+Dead("Balth")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CaeJonel","Locals",3)
+END
+
+IF
+OR(2)
+Global("CaeJonel","Locals",1)
+Global("CaeJonel","Locals",3)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See("LRIrenic")
+!StateCheck("LRIrenic",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet("BDCaelar")
+END
+
+IF
+Global("CealarImoen","Locals",0)
+InParty("Imoen2")
+CombatCounter(0)
+InParty(Myself)
+Dead("Yaga01")
+!AreaCheck("ar6203")
+Delay(24)
+THEN
+RESPONSE #100
+SetGlobal("CealarImoen","Locals",1)
+END
+
+IF
+Global("CealarImoen","Locals",1)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See("Imoen2")
+InParty("Imoen2")
+!StateCheck("Imoen2",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet("BDCaelar")
+END

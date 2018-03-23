@@ -1,0 +1,43 @@
+IF
+Global("CaelarFinal","AR6200",0)
+InParty("BDCaelar")
+THEN
+RESPONSE #100
+SetGlobal("CaelarFinal","AR6200",1)
+IncrementGlobal("PPEvilChoices","GLOBAL",-1)
+END
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("BDCaelar")
+Global("CaelarBio","GLOBAL",0)
+Global("PlayerChoseEssence","GLOBAL",1)
+GlobalLT("PPEvilChoices","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("CaelarBio","GLOBAL",1)
+TextScreen("EECaeEP1")
+END
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("BDCaelar")
+Global("CaelarBio","GLOBAL",0)
+Global("PlayerChoseEssence","GLOBAL",1)
+GlobalGT("PPEvilChoices","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("CaelarBio","GLOBAL",1)
+TextScreen("EECaeEP2")
+END
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("BDCaelar")
+Global("CaelarBio","GLOBAL",0)
+Global("PlayerChoseEssence","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CaelarBio","GLOBAL",1)
+TextScreen("EECaeEP3")
+END
