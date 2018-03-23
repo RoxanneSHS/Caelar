@@ -112,3 +112,41 @@ RESPONSE #100
 MoveToObject(Player1)
 StartDialogNoSet("BDCaelar")
 END
+
+IF
+GlobalGT("BD_crime","Locals",0)
+InParty("Sarevok")
+Global("CealarSarevok","Locals",0)
+!AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+Delay(24)
+THEN
+RESPONSE #100
+SetGlobal("CealarSarevok","Locals",1)
+END
+
+IF
+Global("CealarSarevok","Locals",2)
+InParty("Sarevok")
+GlobalGT("Chapter","Global",20)
+AreaCheck("ar4500")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CealarSarevok","Locals",3)
+END
+
+IF
+OR(2)
+Global("CealarSarevok","Locals",1)
+Global("CealarSarevok","Locals",3)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See("Sarevok")
+!StateCheck("Sarevok",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet("BDCaelar")
+END
