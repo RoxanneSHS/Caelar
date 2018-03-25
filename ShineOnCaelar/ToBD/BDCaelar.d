@@ -104,7 +104,8 @@ END
 
 CHAIN
 IF~~THEN BDCaelar Saradfall2
-~We will see...~EXIT
+~Your father was the Lord of Murder. Countless lives were stolen in his name. What if you could restore that balance - bring back those unjustly taken? Would you? Or is the call of your sire's blood too strong?~[BD35853} 
+=~We will see...~ EXIT
 
 CHAIN
 IF~~THEN BDCaelar Saradfall3
