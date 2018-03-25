@@ -13,6 +13,7 @@ IF~~THEN BDCaelar Kicked2
 CHAIN
 IF~Global("BD_Visited_BD5300","Global",31)~THEN BDCaelar KickedSelf
 ~So you have broken our pact, <CHARNAME>. I should have known you would never help me to deliver those souls to Kelemvor. There is no reason for me to follow you anymore. I stand true to my task and will perform it alone then.~
+=~I do. And even should I fail, it is necessary. To not attempt it would be a greater crime.~[BD56578]
 DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
 
 CHAIN

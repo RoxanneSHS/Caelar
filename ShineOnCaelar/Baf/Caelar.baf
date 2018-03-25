@@ -217,3 +217,32 @@ THEN
 RESPONSE #100
 StartDialogNoSet("BDCaelar")
 END
+
+IF
+Global("ViconiaImoen","Locals",0)
+InParty("Viconia")
+CombatCounter(0)
+InParty(Myself)
+OR(3)
+AreaCheck("ar5200")
+AreaCheck("ar6000")
+AreaCheck("ar6100")
+Delay(24)
+THEN
+RESPONSE #100
+SetGlobal("ViconiaImoen","Locals",1)
+END
+
+IF
+Global("ViconiaImoen","Locals",1)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See("Viconia")
+InParty("Viconia")
+!StateCheck("Viconia",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet("BDCaelar")
+END

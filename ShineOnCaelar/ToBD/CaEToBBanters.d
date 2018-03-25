@@ -32,3 +32,13 @@ DO~SetGlobal("CealarImoen","Locals",2)~
 ==BDCAelar~I never wanted you or <CHARNAME> dead. I needed <PRO_HIMHER> alive. The men I sent to Baldur's Gate - good and righteous men - were meant to capture <PRO_HIMHER>. We did not know about you at all.~
 ==BIMOEN25~Guess what? I know that already. It's that thing about your blood being too thin 'cause that celestial wasn't your direct daddy like our good ol' Bhaal to us. Bet you haven't got those dreams and all the nice extras we have.~
 ==BDCAelar~I have the heritage of the Argents, Imoen. This means something to me. For you, the blood is but a curse - for me it is an obligation and I am proud of it.~EXIT
+
+CHAIN
+IF~Global("ViconiaImoen","Locals",1)~THEN BDCAelar Vicieye
+~What are you staring at, drow?~
+DO~SetGlobal("ViconiaImoen","Locals",2)~
+==BVICON25~Your eyes are strange, you're a freak of nature, that's why they called you the *Shining Lady*~
+==BDCAelar~A title given to me by those who I have inspired, those who believe in my cause. I will not be shamed for acting as a beacon of light to those in darkness.~ [BD60747]
+==BVICON25~Oh, spare me such sermons. Your family was destroyed by ambition and your stay in Avernus just ledt you mad.~
+==BDCAelar~I have heard the whispers. Some see the fire in my eyes and call me mad. I am not. I am ambitious, yes, and I am righteous, but not mad. I see the possibility of a better world than this. And I will make my vision a reality.~[BD35827]
+==BVICON25~I've heard legions of fools declare such *visions*. They're all dust. I won't let you take <CHARNAME> downhill with you.~EXIT
