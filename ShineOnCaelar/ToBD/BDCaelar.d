@@ -90,6 +90,29 @@ IF~~THEN BDCaelar Hephi
 ~The only one with a hidden agenda was Hephernaan, as we both well know. And truly hidden it was. My goal were the souls in Avernus.~EXTERN BDCaelar Many
 
 CHAIN
+IF~Global("BD_SaradushFell","Locals",1)~THEN BDCaelar Saradfall
+~Our decisions impact many, even those who don't even know us and whom we never get to know, <CHARNAME>. I know how it feels to be responsible for the victims of war.~
+DO~SetGlobal("BD_SaradushFell","Locals",2)~
+==BDCaelar IF~ GlobalLT("BD_Visited_BD5300","Global",4)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. I will honor their passing with the return of the Dragonspear dead.~[BD35852]
+==BDCaelar IF~ GlobalGT("BD_Visited_BD5300","Global",3)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. We have honored their passing with the return of the Dragonspear dead.~
+==BDCaelar~Can you make such a promise to those who vanished with Saradush?~
+END
+++~I did not cause these dead like you caused those who fell in YOUR crusade. You don't get me to your level, Caelar, don't even try.~+ Saradfall2
+++~I swear that the Five will pay for this crime. I will fight those trying to raise Bhaal until my last breath.~+ Saradfall3
+++~Neither you could run away from your fate nor can I. You are right, we must honor the fallen with the deeds we do in their name.~+ Saradfall3
+++~You faced such losses so you must know that no words can express what I feel right now.~+ Saradfall3
+
+CHAIN
+IF~~THEN BDCaelar Saradfall2
+~We will see...~EXIT
+
+CHAIN
+IF~~THEN BDCaelar Saradfall3
+~(Her hand lies on your shoulder for a short moment, her shining eyes meet yours for a second, and she nods.)~
+=~(She turns away abruptly and faces the landscape.)~EXIT
+
+
+CHAIN
 IF~Global("BD_ToB_CaelarD","Global",6) IsGabber(Player1) !RealGlobalTimerExpired("BD_ToB_CaelarT","Locals")~THEN BDCaelar NoPIDs
 ~(Her shining blue eyes mask all expression her face might reveal. She is not in the mood for a conversation right now) ~EXIT
 

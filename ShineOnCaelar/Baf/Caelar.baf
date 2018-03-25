@@ -65,6 +65,20 @@ SetGlobal("BD_Visited_BD5300","Global",4)
 END
 
 IF
+IsValidForPartyDialog(Myself)
+Global("BD_SaradushFell","Locals",0)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("BD_SaradushFell","Locals",1)
+StartDialogueNoSet(Player1)
+END
+
+IF
 Global("BD_Visited_BD5300","Global",6)
 Global("BD_ToB_CaelarD","Global",2)
 AreaType(OUTDOOR)
@@ -96,11 +110,12 @@ SetGlobal("BD_Visited_BD5300","Global",31)
 END
 
 IF
-OR(4)
+OR(5)
 Global("BD_ToB_CaelarD","Global",1)
 Global("BD_ToB_CaelarD","Global",4)
 Global("BD_Visited_BD5300","Global",4)
 Global("BD_Visited_BD5300","Global",31)
+Global("BD_SaradushFell","Locals",1)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])
