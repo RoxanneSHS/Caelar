@@ -32,8 +32,8 @@ IF WEIGHT #-7~Global("bd_alt_willing_surrender","global",4)~THEN BDCaelar InSpea
 DO~SetGlobal("bd_alt_willing_surrender","global",5)~
 ==BDHepher~My lady, it may still turn out a grave mistake to trust the Bhaalspawn, We need <PRO_HISHER> blood, not <PRO_HISHER> cooperation.~
 ==BDCaelar~Enough blood has been spilled, Hephernaan, we finally come near out glorious goal. Let us not soil it, I gave my word, the word of an Argent.~
-==BDHepher~The spawn in chains would serve us just as fine. No need for a risk anymore.~
-==BDCaelar~Our words and honor bind us more than chains, isn't that so, <CHARNAME>?~
+==BDHepher~The spawn in chains would serve us just as fine. No need for a risk any more.~
+==BDCaelar~Our words and honour bind us more than chains, isn't that so, <CHARNAME>?~
 END
 ++~Your advisor has all reason to fear me, Caelar. I came for your task but not for his.~ EXTERN BDHepher InSpear2
 ++~Hephernaan, it's about time we open the eyes of the Shining Lady to see where the enemy is and where the ally, don't you think?~EXTERN BDHepher InSpear3

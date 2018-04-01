@@ -3,7 +3,7 @@ IF~Global("InParty","LOCALS",1) !InParty("BDCaelar")~THEN BDCaelar Kicked
 ~So you want to break our pact, <CHARNAME>?~
 END
 ++~You have learned little and are not willing ro change. I bear it no longer.~+ Kicked2
-++~I want you to rest for a while and cintemplate our circumstances.~ + Kicked2
+++~I want you to rest for a while and contemplate our circumstances.~ + Kicked2
 ++~No. Stay with me, Caelar. Let us move on~DO~JoinParty() ChangeAIScript("DPlayer2",DEFAULT)~EXIT
 
 CHAIN
@@ -12,7 +12,7 @@ IF~~THEN BDCaelar Kicked2
 
 CHAIN
 IF~Global("BD_Visited_BD5300","Global",31)~THEN BDCaelar KickedSelf
-~So you have broken our pact, <CHARNAME>. I should have known you would never help me to deliver those souls to Kelemvor. There is no reason for me to follow you anymore. I stand true to my task and will perform it alone then.~
+~So you have broken our pact, <CHARNAME>. I should have known you would never help me to deliver those souls to Kelemvor. There is no reason for me to follow you any more. I stand true to my task and will perform it alone then.~
 =~I do. And even should I fail, it is necessary. To not attempt it would be a greater crime.~[BD56578]
 DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
 
@@ -41,19 +41,19 @@ IF~~THEN BDCaelar AfterPlane3
 ==BDCaelar IF~InParty("CVSandr")~THEN~Also, I talked with Sandrah about it and she mentioned a place called Kanaglym. It must be below Dragonspear Castle.~
 END
 IF~Global("BD_Visited_BD5300","Global",1) !InParty("CVSandr")~THEN REPLY~When we explored the underground river below Dragonspear, we found a place called Kanaglym. Might this be the access you seek?~+ AfterPlane4a
-IF~Global("BD_Visited_BD5300","Global",1) InParty("CVSandr")~THEN REPLY~Sandrah is right. When we explored the underground river below Dragonspear, we found this place. Good to be reminded, counselor.~+ AfterPlane4a
+IF~Global("BD_Visited_BD5300","Global",1) InParty("CVSandr")~THEN REPLY~Sandrah is right. When we explored the underground river below Dragonspear, we found this place. Good to be reminded, counsellor.~+ AfterPlane4a
 IF~Global("BD_Visited_BD5300","Global",0) InParty("CVSandr")~THEN REPLY~Sandrah and her tomes! But when we explored the underground river below Dragonspear, we did not find this place. We may have been to much in hurry back then.~+ AfterPlane4a
 ++~Even better, where do we find a temple of Kelemvor?~+ AfterPlane4b
  
 CHAIN
 IF~~THEN BDCaelar AfterPlane4a
-~I had a priest of Ilmater among my advisors during the crusade. It may be worth inquiring at one of their temples about the issue? I mean before we blindly return to *that* place...~
+~I had a priest of Ilmater among my advisers during the crusade. It may be worth inquiring at one of their temples about the issue? I mean before we blindly return to *that* place...~
 DO~SetGlobal("BD_Visited_BD5300","Global",3) Wait(2) AddJournalEntry(@14,QUEST)~
 ==IF_FILE_EXISTS C0Sir25J IF~InParty("C0Sirene")~ THEN ~Our priests are well educated in the matters of Kelemvor, I'm sorry that my own education is not as deep to be of help.~EXIT 
 
 CHAIN
 IF~~THEN BDCaelar AfterPlane4b
-~I had a priest of Ilmater among my advisors during the crusade. It may be worth inquiring at one of their temples about the issue? Illmater's followers seem to know something about Kelemvor as well.~
+~I had a priest of Ilmater among my advisers during the crusade. It may be worth inquiring at one of their temples about the issue? Illmater's followers seem to know something about Kelemvor as well.~
 DO~SetGlobal("BD_Visited_BD5300","Global",3) Wait(2) AddJournalEntry(@14,QUEST)~
 ==IF_FILE_EXISTS C0Sir25J IF~InParty("C0Sirene")~ THEN ~Our priests are well educated in the matters of Kelemvor, I'm sorry that my own education is not as deep to be of help.~EXIT 
 
@@ -94,12 +94,12 @@ IF~Global("BD_SaradushFell","Locals",1)~THEN BDCaelar Saradfall
 ~Our decisions impact many, even those who don't even know us and whom we never get to know, <CHARNAME>. I know how it feels to be responsible for the victims of war.~
 DO~SetGlobal("BD_SaradushFell","Locals",2)~
 ==BDCaelar IF~ GlobalLT("BD_Visited_BD5300","Global",4)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. I will honor their passing with the return of the Dragonspear dead.~[BD35852]
-==BDCaelar IF~ GlobalGT("BD_Visited_BD5300","Global",3)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. We have honored their passing with the return of the Dragonspear dead.~
+==BDCaelar IF~ GlobalGT("BD_Visited_BD5300","Global",3)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. We have honoured their passing with the return of the Dragonspear dead.~
 ==BDCaelar~Can you make such a promise to those who vanished with Saradush?~
 END
 ++~I did not cause these dead like you caused those who fell in YOUR crusade. You don't get me to your level, Caelar, don't even try.~+ Saradfall2
 ++~I swear that the Five will pay for this crime. I will fight those trying to raise Bhaal until my last breath.~+ Saradfall3
-++~Neither you could run away from your fate nor can I. You are right, we must honor the fallen with the deeds we do in their name.~+ Saradfall3
+++~Neither you could run away from your fate nor can I. You are right, we must honour the fallen with the deeds we do in their name.~+ Saradfall3
 ++~You faced such losses so you must know that no words can express what I feel right now.~+ Saradfall3
 
 CHAIN
@@ -149,14 +149,14 @@ IF~~THEN BDCaelar CaeEyes3
 
 CHAIN
 IF~~THEN BDCaelar CaeServe1
-~My time in Avernus has cured me from my belief in Lathander. I can't see myself associated with the Order of the Aster anymore.~
+~My time in Avernus has cured me from my belief in Lathander. I can't see myself associated with the Order of the Aster any more.~
 END
 ++~They won't take you back anyway I guess.~+ CaeServe2a
 ++~What does this have to do with me?~+ CaeServe2a
 
 CHAIN
 IF~~THEN BDCaelar CaeServe2a
-~You and I are not that different, don't fool yourself about it. We are born with a heritage and a destiny unlike most others. We have nowhere to go back to anymore and what lies ahead of us is what we shape for ourselves.~
+~You and I are not that different, don't fool yourself about it. We are born with a heritage and a destiny unlike most others. We have nowhere to go back to any more and what lies ahead of us is what we shape for ourselves.~
 =~I was just nine years old when I made the mistake of my life. Trying to correct it with the false advice of the Gods and some advisors didn't make things better. Your course was set even prior your birth and further set in motion with Sarevok killing your Gorion.~
 =~Many try to judge you and many think they can judge me. But they all know nothing. And we will proof it to them.~
 END
@@ -170,7 +170,7 @@ IF~~THEN BDCaelar CaeServe2
 END
 ++~I will never take Bhaal's throne!~+ CaeServe3
 ++~You will fall deep from Lathander to Bhaal, Caelar.~+ CaeServe3
-++~So I'm your stepping stone for another army of desctruction? Wasn't the crusade enough for your taste?~+ CaeServe3
+++~So I'm your stepping stone for another army of destruction? Wasn't the crusade enough for your taste?~+ CaeServe3
 
 CHAIN
 IF~~THEN BDCaelar CaeServe3
@@ -179,7 +179,7 @@ IF~~THEN BDCaelar CaeServe3
 
 CHAIN
 IF~~THEN BDCaelar Hepham1
-~After I lost uncle Aun to Avernus, I made demands at the order of the Aster to take unflinching action against the forces of evil. My demands fell on deafened ears. I left the knighthood, seeking a means by which to fulfill my righteous vision.~
+~After I lost uncle Aun to Avernus, I made demands at the order of the Aster to take unflinching action against the forces of evil. My demands fell on deafened ears. I left the knighthood, seeking a means by which to fulfil my righteous vision.~
 END
 ++~You could be glad they did not punish you for your failure.~+ Hepham2
 ++~They had no means to do it, even if they had intended to help you.~+ Hepham2
@@ -268,7 +268,7 @@ END
 
 CHAIN
 IF~~THEN BDCaelar Uphill
-~I have not lost my confidence yet. Since we travel together, I see that great things can be achieved if we work together. Your leadership and my contributions will solve this crisis. The smoldering flame that is Caelar Argent may soon be shining bright again.~EXIT
+~I have not lost my confidence yet. Since we travel together, I see that great things can be achieved if we work together. Your leadership and my contributions will solve this crisis. The smouldering flame that is Caelar Argent may soon be shining bright again.~EXIT
 
 CHAIN
 IF~~THEN BDCaelar JudgeB

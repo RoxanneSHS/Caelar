@@ -5,7 +5,7 @@ DO~SetGlobal("bd_alt_willing_surrender","global",10)~
 =~I came in the vague hope our ways would cross here. It was before I learned about the trap this town turns out to be. But even with such knowledge, I couldn't have decided not to come.~
 END
 ++~Aun Argent, what the hell are you doing here?~+ Plot2
-++~Do I know you, paladin? Are you some bhaalspawn to stand in my way?~+ Plot3
+++~Do I know you, paladin? Are you some Bhaalspawn to stand in my way?~+ Plot3
 ++~Who in the name of any god would send people to meet me HERE?~+ Plot2
 
 CHAIN
@@ -15,7 +15,7 @@ IF~~THEN BDAUN Plot3
 CHAIN
 IF~~THEN BDAUN Plot2
 ~A common acquaintance helped me to track you down.~
-==BDAUN IF~InParty("CVSandr")~THEN~(Nods at Sandrah) Your father, mylady, he is about the only person who seems to be able to follow the twisted road your party takes through the Realms...~
+==BDAUN IF~InParty("CVSandr")~THEN~(Nods at Sandrah) Your father, milady, he is about the only person who seems to be able to follow the twisted road your party takes through the Realms...~
 ==BDAUN IF~!InParty("CVSandr")~THEN~Elminster, he is about the only person who seems to be able to follow the twisted road your party takes through the Realms...~
 ==BDAUN~He was sure that your fate would lead you to Saradush sooner or later.~
 END
@@ -71,7 +71,7 @@ IF~~THEN BDAUN Plot14
 To live your life a second time, all you did and all you did not. Your decisions, your mistakes. The endless fires burn away excuses and lies and leave your naked self for you to face. And this is all that will be left of you in the end.~
 END
 ++~Whom will I find should I decide to rescue Caelar, can you tell me, Aun.~+ Plot16
-++~What is Caelar's naked self like, what do you thinh, Aun.~+ Plot16
+++~What is Caelar's naked self like, what do you think, Aun.~+ Plot16
 ++~What if all that's left of Caelar in the end is a monstrosity.~+ Plot16
 ++~It may be better not to bring back what is left of Caelar, did you consider that aspect?.~+ Plot16
 
@@ -83,7 +83,7 @@ CHAIN
 IF~~THEN BDAUN Plot16
 ~Caelar is an Argent, she is an aasimar, she will not break and she will not be destroyed. But she will be purified. Yes, she will be humbled and suffering from it. But she will never again be the *Shining Lady*. Her inherited power will give her the strength to make something out of this.~
 =~Bhaalspawn, of all the people in the Realms you should be the one to understand her. Like you shape yourself with the heritage you carry and the deeds you did and will do, so does she.~
-=~Give her this chance just like you would asks the powers that are to give youself that chance.~
+=~Give her this chance just like you would asks the powers that are to give yourself that chance.~
 =~Say nothing, <CHARNAME>, contemplate my words. Your decision will answer for you.~DO~AddJournalEntry(@12,QUEST) Wait(2) RunAwayFrom(Player1,20)~EXIT
 
 CHAIN
@@ -129,7 +129,7 @@ IF~~THEN BDCaelar Rescue2
 END
 ++~Just the mighty Bhaalspawn alone. We have little time to waste. Listen.~+ Rescue3
 ++~I've become a neighbour of kinds. Why don't you come over to my place for a chat.~+ Rescue3
-++~There's no danger since I'm the only one who can use that backdoor. It's time for you to leave this place.~+ Rescue3
+++~There's no danger since I'm the only one who can use that back-door. It's time for you to leave this place.~+ Rescue3
 
 CHAIN
 IF~~THEN BDCaelar Rescue3
@@ -161,7 +161,7 @@ DO~SetGlobal("BDEEAunplot","Global",8)~
 ==BDAUN~Be fair, Caelar, you may not fully understand it all. Yes, this is the Bhaalspawn's plane made out of the own essence and will. The facade may be ugly but the outcome of it all is not yet set.~
 =~We can play a part in it - I mean, you can play a part in it, Caelar. How <CHARNAME> deals with the power of the dead god will soon be determined. You owe <PRO_HIMHER> your sword and allegiance in the events to come.~
 ==BDCaelar~Do I?~
-=~I'm no Shining Lady anymore. I've seen more of destruction and death than is necessary, uncle. The Bhaalspawn will not lead the Realms to peace, I know the prophesy just as well as you know it.~
+=~I'm no Shining Lady any more. I've seen more of destruction and death than is necessary, uncle. The Bhaalspawn will not lead the Realms to peace, I know the prophesy just as well as you know it.~
 ==BDAUN~Then you know that there may be an outcome that will provide hope rather than murder. We must work towards this goal, Caelar. The name Argent must no longer be associated with suffering and betrayal, with Dragonspear and what happened there. Our family and name must regain what it once was. YOU must do that, you're the one to bring back for us what was lost in Avernus.~
 ==BDCaelar~Very well, uncle.~
 =~<CHARNAME>, my time in Avernus was not completely in vain. Apart from what I learned about myself and my mistakes, I was able to actually gain a significant number of souls of those who deemed lost. This soul globe contains them. I swear you my loyalty in the events to come if you promise to help me bring those souls to rest.~

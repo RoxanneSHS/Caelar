@@ -14,7 +14,7 @@ IF~~THEN Slilmat Caequest1s
 ==BDCaelar IF~InParty("BDCaelar")~THEN~ We seek a place that allows us to deliver some suffering souls of those departed to the Fugue Plane. I was able to rescue them from Avernus.~
 END
 IF~InParty("BDCaelar")~EXTERN Slilmat Caequest2s
-IF~!InParty("BDCaelar")~THEN REPLY~We seek a place that allows us to deliver some suffering souls of those departed to the Fugue Plane. The formerly Shing Lady was able to rescue them from Avernus.~EXTERN Slilmat Caequest2s
+IF~!InParty("BDCaelar")~THEN REPLY~We seek a place that allows us to deliver some suffering souls of those departed to the Fugue Plane. The formerly Shining Lady was able to rescue them from Avernus.~EXTERN Slilmat Caequest2s
 
 CHAIN
 IF~~THEN Slilmat Caequest2s
@@ -45,7 +45,7 @@ IF~Global("BD_NewQuest","BD5000",1)~THEN BDCaeen1 welcome
 ~See who's coming.~
 DO~SetGlobal("BD_NewQuest","BD5000",2)~
 ==BDCaeen1 IF~InParty("BDCaelar")~THEN~Our *Shining Lady* and her Bhaalspawn, the very ones that caused our mysery and defeat.~
-==BDCaeen1 IF~!InParty("BDCaelar")~THEN~Caelar's Bhaalspawn, the very ones that caused our mysery and defeat.~
+==BDCaeen1 IF~!InParty("BDCaelar")~THEN~Caelar's Bhaalspawn, the very ones that caused our misery and defeat.~
 ==BDCaelar IF~InParty("BDCaelar")~THEN~You were always good in shifting the blame to others, Burthon, the coward. What happened to you after the crusade is nothing but your own doing.~
 END
 IF~!InParty("BDCaelar")~THEN REPLY~You were always good in shifting the blame to others, coward. I had nothing to do with your fate.~+ welcome2
@@ -87,9 +87,9 @@ IF~~THEN REPLY~Get out of my way, fool, I have no more business with you. Histor
 
 CHAIN
 IF~~THEN BDNederl InTob2
-~I'm inclined to believe you, <CHARNAME>. Somehow I always perceived you as a <PRO_MANWOMAN> of honor.~
+~I'm inclined to believe you, <CHARNAME>. Somehow I always perceived you as a <PRO_MANWOMAN> of honour.~
 =~The price for this outcome has been high. (Sigh), far too high in my humble opinion but that cannot be changed anymore. Too many people made too many mistakes in this matter.~
-=~Can you give me your word that you leave here peacefully and not return anymore?~
+=~Can you give me your word that you leave here peacefully and not return any more?~
 END
 IF~ !InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3P
 IF~!InParty("BDCAelar") !Alignment(Player1,MASK_EVIL)  ~THEN REPLY~ I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3P

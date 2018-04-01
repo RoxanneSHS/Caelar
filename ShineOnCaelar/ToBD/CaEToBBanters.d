@@ -7,7 +7,7 @@ DO~SetGlobal("CealarSarevok","Locals",2)~
 ==BDCAelar~Actually, a lot of suffering and death could have been avoided if we had only known about your godly blood by then already.~
 ==BSarev25~Would you have been willing to pay my price for co-operation, I wonder.~
 ==BDCAelar~What would you have requested?~
-==BSarev25~Mh...Command over the crudaders before and after opening the portal. I would've used them after Avernus instead of those wimpering Flaming Fists to establish my reign further.~
+==BSarev25~Mh...Command over the crusaders before and after opening the portal. I would've used them after Avernus instead of those whimpering Flaming Fists to establish my reign further.~
 ==BDCAelar~Seeing you now, I have my doubts that you would've been able to fulfil your part of the bargain to begin with.~EXIT
 
 CHAIN
