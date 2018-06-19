@@ -28,9 +28,9 @@ DO~SetGlobal("bd_parley_retreat","bd7300",1) StartCutSceneMode() Wait(2) StartCu
 
 CHAIN
 IF WEIGHT #-7~Global("bd_alt_willing_surrender","global",4)~THEN BDCaelar InSpear1
-~I still can't believe that we avoided the battle that would have painted the walls of this castle with the blood of many innocents. I have thought maybe too low of you, <CHARNAME>.~
+~I still can't believe that we avoided the battle that would have painted the walls of this castle with the blood of many innocent. I have thought maybe too low of you, <CHARNAME>.~
 DO~SetGlobal("bd_alt_willing_surrender","global",5)~
-==BDHepher~My lady, it may still turn out a grave mistake to trust the Bhaalspawn, We need <PRO_HISHER> blood, not <PRO_HISHER> cooperation.~
+==BDHepher~My lady, it may still turn out a grave mistake to trust the Bhaalspawn. We need <PRO_HISHER> blood, not <PRO_HISHER> cooperation.~
 ==BDCaelar~Enough blood has been spilled, Hephernaan, we finally come near out glorious goal. Let us not soil it, I gave my word, the word of an Argent.~
 ==BDHepher~The spawn in chains would serve us just as fine. No need for a risk any more.~
 ==BDCaelar~Our words and honour bind us more than chains, isn't that so, <CHARNAME>?~
@@ -47,7 +47,7 @@ IF~~THEN BDHepher InSpear2
 
 CHAIN
 IF~~THEN BDHepher InSpear3
-~The seal awaits us, my lady, and this snake only tries to win time and hold us up until his allies are ready to strike.~
+~The seal awaits us, my lady, and this snake only tries to win time and hold us up until <PRO_HISHER> allies are ready to strike.~
 =~We have no time to waste. To the portal, I say!~
 DO~SetGlobal("bd_alt_willing_surrender","global",6) ActionOverride("BDHepher",MoveToPointNoInterrupt([4423.545])) ActionOverride("BDHepher",EscapeAreaObject("TransBD4100"))~EXIT
 
