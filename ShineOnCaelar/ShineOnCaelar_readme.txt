@@ -1,4 +1,4 @@
-Shine on, Caelar v.06 (Beta status)
+Shine on, Caelar v.07 
 =====================
 A mod for SoD and EET by RoxanneSHS
 
@@ -15,6 +15,5 @@ This addition (for EET only) will allow you to finally release the Shining Lady 
 This way all your former opponents from the various campaigns (Sarevok, Caelar and Irenicus) may be added to your final party.
 Instead of seeking redemption as a fallen paladin, Caelar will try to become the champion of a rising new god, although her idea about your role differs quite a bit from Sarevok's view...
 Caelar has a quest concerning the souls lost in Avernus which includes the party's return to Dragonspear and various SoD areas.
+The player can control the pace of Caelar's talks about previous events and their consequences by using the PID option.
 
-Part 2 is currently suspended for release until details about a possible other mod that may bring Caelar back to the game are known. This is to avoid overlap or incompatibility. (Note that part 1 stays true to the original SoD contents concerning Caelar and therefore should be compatible with any mod that adds her in later parts.)
-You can currently play the rescue sequence in ToB but Caelar is not joinable yet.

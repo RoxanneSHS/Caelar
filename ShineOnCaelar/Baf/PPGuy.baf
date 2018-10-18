@@ -1,6 +1,6 @@
 IF
 WalkedToTrigger([ANYONE])
-Global("LeavingPocketPlane","AR4500",0)
+Global("LeavingPocketPlane","AR4500",1)
 GlobalGT("GavePocketPlane","GLOBAL",0)
 !GlobalTimerNotExpired("Triggered","MYAREA")
 Global("BDEEAunplot","Global",4) 
