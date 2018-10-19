@@ -132,6 +132,7 @@ IF
 GlobalGT("BD_crime","Locals",0)
 InParty("Sarevok")
 Global("CealarSarevok","Locals",0)
+GlobalGT("BDEEAunplot","Global",7)
 !AreaType(OUTDOOR)
 !AreaType(DUNGEON)
 Delay(24)
@@ -170,6 +171,7 @@ IF
 InParty("LRIrenic")
 Global("CaeJonel","Locals",0)
 !AreaCheck("ar4500")
+GlobalGT("BDEEAunplot","Global",7)
 CombatCounter(0)
 THEN
 RESPONSE #100
