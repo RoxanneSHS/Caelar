@@ -51,8 +51,8 @@ CHAIN
 IF~~THEN Sarvolo Volcael
 ~Caelar? The Shining Lady of the failed crusade who is lost in Avernus?~
 ==BDCaelar~...was temporarily lost on Avernus, Volo. Correct that detail.~
-==Sarvolo~ Those eyes...the emblem on your shield. I see. <CHARNAME>, your powers are not exaggerated.~
+==Sarvolo~ Those eyes...the emblem on your shield. I see. <CHARNAME>, the rumours concerning your powers are not exaggerated.~
 ==BDCaelar~Make sure that you don't miss how the reputation of the Argents is restored and make it known to all who doubt my family.~
 END
-++~Whatever happened at Dragonspear will soon appear in a new light, Volo~+ 9
+++~Whatever happened at Dragonspear will soon appear in a new light, Volo.~+ 9
 ++~Once we did what we promised to do, I am sure Volo will have his material, Caelar.~+ 9
