@@ -65,7 +65,7 @@ SetGlobal("BD_Visited_BD5300","Global",4)
 END
 
 IF
-IsValidForPartyDialog(Myself)
+Global("SaradushSacked","GLOBAL",1)
 Global("BD_SaradushFell","Locals",0)
 InParty(Myself)
 !StateCheck(Player1,CD_STATE_NOTVALID)
