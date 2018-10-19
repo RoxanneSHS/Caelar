@@ -42,3 +42,17 @@ DO~SetGlobal("ViconiaImoen","Locals",2)~
 ==BVICON25~Oh, spare me such sermons. Your family was destroyed by ambition and your stay in Avernus just ledt you mad.~
 ==BDCAelar~I have heard the whispers. Some see the fire in my eyes and call me mad. I am not. I am ambitious, yes, and I am righteous, but not mad. I see the possibility of a better world than this. And I will make my vision a reality.~[BD35827]
 ==BVICON25~I've heard legions of fools declare such *visions*. They're all dust. I won't let you take <CHARNAME> downhill with you.~EXIT
+
+EXTEND_BOTTOM Sarvolo 9
+IF~ InParty("BDCaelar") ~THEN REPLY~What do you know about Aun Argent's niece?~ GOTO Volcael
+END
+
+CHAIN
+IF~~THEN Sarvolo Volcael
+~Caelar? The Shining Lady of the failed crusade who is lost in Avernus?~
+==BDCaelar~...was temporarily lost on Avernus, Volo. Correct that detail.~
+==Sarvolo~ Those eyes...the emblem on your shield. I see. <CHARNAME>, your powers are not exaggerated.~
+==BDCaelar~Make sure that you don't miss how the reputation of the Argents is restored and make it known to all who doubt my family.~
+END
+++~Whatever happened at Dragonspear will soon appear in a new light, Volo~+ 9
+++~Once we did what we promised to do, I am sure Volo will have his material, Caelar.~+ 9
