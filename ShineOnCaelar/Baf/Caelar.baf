@@ -214,7 +214,7 @@ InParty("Imoen2")
 CombatCounter(0)
 InParty(Myself)
 Dead("Yaga01")
-!AreaCheck("ar6203")
+!AreaCheck("ar5203")
 Delay(24)
 THEN
 RESPONSE #100
