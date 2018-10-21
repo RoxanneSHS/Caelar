@@ -18,7 +18,7 @@ DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
 
 CHAIN
 IF~Global("BD_ToB_CaelarD","Global",1)~THEN BDCaelar AfterPlane1
-~Ah, fresh air in my lungs! I almost forgot how it feels to have an open sky above. No wonder that the drow turned into...what frow are.~
+~Ah, fresh air in my lungs! I almost forgot how it feels to have an open sky above. No wonder that the drow turned into...what drow are.~
 DO~SetGlobal("BD_ToB_CaelarD","Global",2)~
 =~Anyway, it may now be the right moment to tell you more about the quest you promised to solve with me.~
 END
