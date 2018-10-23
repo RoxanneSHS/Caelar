@@ -133,7 +133,7 @@ IF~~THEN REPLY~Ah, nothing, Caelar. ~DO~RealSetGlobalTimer("BD_ToB_CaelarT","Loc
 CHAIN
 IF~~THEN BDCaelar CaeEyes1
 ~I am assimar as you well know. My eyes are part of my celestial heritage. I can't hide my anchestory nor did I ever intend to hide it. ~
-=~Aasimar bear the mark of their celestial touch through many different physical features that often varied from individual to individual. Those descended from ghaeles often have pearly opalescent eyes like mine.~
+=~Aasimar bear the mark of their celestial touch through many different physical features that often vary from individual to individual. Those descending from ghaeles often have pearly opalescent eyes like mine.~
 END
 ++~Ghaeles?~+ CaeEyes2
 ++~Aasimar descend from creatures of pure good alignment, but while predisposed to good alignments, aasimar are by no means always good.~+ CaeEyes3
