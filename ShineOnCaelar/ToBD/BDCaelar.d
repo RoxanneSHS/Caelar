@@ -4,7 +4,7 @@ IF~Global("InParty","LOCALS",1) !InParty("BDCaelar")~THEN BDCaelar Kicked
 END
 ++~You have learned little and are not willing ro change. I bear it no longer.~+ Kicked2
 ++~I want you to rest for a while and contemplate our circumstances.~ + Kicked2
-++~No. Stay with me, Caelar. Let us move on~DO~JoinParty() ChangeAIScript("DPlayer2",DEFAULT)~EXIT
+++~No. Stay with me, Caelar. Let us move on.~DO~JoinParty() ChangeAIScript("DPlayer2",DEFAULT)~EXIT
 
 CHAIN
 IF~~THEN BDCaelar Kicked2
