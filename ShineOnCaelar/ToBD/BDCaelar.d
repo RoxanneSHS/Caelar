@@ -226,7 +226,7 @@ IF~~THEN BDCaelar blood3
 CHAIN
 IF~~THEN BDCaelar blood2
 ~I never wanted you dead. I needed you alive. The men I sent to Baldur's Gate - good and righteous men - were meant to capture you.~
-=~Later I tried my charisma on you and tried to let me see my vision. It were your so-called allies who tried to keep us apart.~ EXTERN BDCaelar PidFin
+=~Later I tried my charisma on you and tried to let you see my vision. It were your so-called allies who tried to keep us apart.~ EXTERN BDCaelar PidFin
 
 CHAIN
 IF~~THEN BDCaelar crime1
