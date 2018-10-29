@@ -230,7 +230,7 @@ IF~~THEN BDCaelar blood2
 
 CHAIN
 IF~~THEN BDCaelar crime1
-~Nobody ever ordered any crimes, <CHARNAME>. Listen very carefully, you have been fed with as many lies from your *friends* in Baldur's Gate as I had to swallow from my *advisor*~
+~Nobody ever ordered any crimes, <CHARNAME>. Listen very carefully, you have been fed with as many lies from your *friends* in Baldur's Gate as I had to swallow from my *advisor*.~
 END
 ++~Explain.~+ crime2
 ++~You have an excuse for yourself for everything, haven't you.~+ crime2
