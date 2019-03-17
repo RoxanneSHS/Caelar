@@ -66,7 +66,7 @@ END
 ++~All of his actions speak a clear language. You may be what you claim, but Hephernaan is no servant of the light. ~+ InSpearw3
 ++~You heard him, he still wants to enforce what I came to do willingly. Hephernaan is no servant of the light. ~+ InSpearw3
 ++~We found documents about his history and reports from spies. He uses you for his own sinister purpose only. ~+ InSpearw4
-IF~Global("bd_hephernann_talk_belhifet","global",1)~THEN REPLY~He has his own little altar in the basement where he prays to his true master. We observes him when we sneaked through your secret supply road. He wants the portal to be opened for his master's arrival.~+ InSpearw4
+IF~Global("bd_hephernann_talk_belhifet","global",1)~THEN REPLY~He has his own little altar in the basement where he prays to his true master. We observed him when we sneaked through your secret supply road. He wants the portal to be opened for his master's arrival.~+ InSpearw4
 
 CHAIN
 IF~~THEN BDCaelar InSpearw3
