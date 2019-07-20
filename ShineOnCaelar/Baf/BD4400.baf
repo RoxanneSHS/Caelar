@@ -1,5 +1,15 @@
 IF
 Global("BDEEAunplot","Global",5)
+!InMyArea("BDCaelar")
+Global("CaelMove","bd4400",0)
+THEN
+RESPONSE #100
+SetGlobal("CaelMove","bd4400",1)
+MoveGlobal("bd4400","BDCaelar",[1189.1112])
+END
+
+IF
+Global("BDEEAunplot","Global",5)
 InMyArea("BDCaelar")
 Global("CaelClean","bd4400",0)
 THEN
