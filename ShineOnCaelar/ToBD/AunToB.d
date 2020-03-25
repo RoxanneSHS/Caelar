@@ -87,7 +87,7 @@ IF~~THEN BDAUN Plot16
 =~Say nothing, <CHARNAME>, contemplate my words. Your decision will answer for you.~DO~AddJournalEntry(@12,QUEST) Wait(2) RunAwayFrom(Player1,20)~EXIT
 
 CHAIN
-IF WEIGHT #-4~Global("BDEEAunplot","Global",4) Global("MelissanYagaKillJob","GLOBAL",0)~THEN PPGUY01 GoHell
+IF WEIGHT #-4~GlobalGT("BDEEAunplot","Global",3) Global("MelissanYagaKillJob","GLOBAL",0)~THEN PPGUY01 GoHell
 ~You can use your planar door to travel to several places. Where do you wish to go?~
 END
 ++~I wish to go to Saradush.~EXTERN PPGUY01 3

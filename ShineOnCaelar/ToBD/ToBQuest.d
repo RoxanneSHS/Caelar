@@ -92,7 +92,7 @@ IF~~THEN BDNederl InTob2
 =~Can you give me your word that you leave here peacefully and not return any more?~
 END
 IF~ !InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3P
-IF~!InParty("BDCAelar") !Alignment(Player1,MASK_EVIL)  ~THEN REPLY~ I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3P
+IF~!InParty("BDCAelar") !Alignment(Player1,MASK_EVIL)  ~THEN REPLY~I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3P
 IF~ !InParty("BDCAelar") !Alignment(Player1,MASK_EVIL) ~THEN REPLY~I have no quarrel with you and there is no need for hostility, Marshal. I'll just be on my way.~+ InTob3P
 IF~!InParty("BDCAelar") Alignment(Player1,MASK_EVIL) ~THEN REPLY~I'm my own <PRO_MANWOMAN> and I don't answer to you. I go where I need to go and you will not hinder me.~+ InTob3F
 IF~!InParty("BDCAelar") Alignment(Player1,MASK_EVIL) ~THEN REPLY~I told you the truth, Nederlok, our mission here is done and I have no reason to return.~+ InTob3F
