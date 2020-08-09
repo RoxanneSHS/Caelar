@@ -35,9 +35,9 @@ SetGlobal("InParty","LOCALS",1)
 ChangeAIScript("DPlayer2",DEFAULT)
 ChangeAlignment(Myself,LAWFUL_NEUTRAL)
 Wait(2)
-AddJournalEntry(@14,QUEST) 
+AddJournalEntry(@2014,QUEST) 
 Wait(2) 
-EraseJournalEntry(@12)
+EraseJournalEntry(@2012)
 END
 
 IF

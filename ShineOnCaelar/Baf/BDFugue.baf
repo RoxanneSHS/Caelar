@@ -39,6 +39,6 @@ AddXPObject("BDCaelar",13000)
 Wait(2)
 TextScreen("EEFugue")
 Wait(2)
-AddJournalEntry(@16,QUEST_DONE)
+AddJournalEntry(@2016,QUEST_DONE)
 SetInterrupt(TRUE)
 END
