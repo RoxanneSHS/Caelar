@@ -13,7 +13,7 @@ IF~~THEN BDCaelar Kicked2
 CHAIN
 IF~Global("BD_Visited_BD5300","Global",31)~THEN BDCaelar KickedSelf
 @5
-=~I do. And even should I fail, it is necessary. To not attempt it would be a greater crime.~[BD56578]
+@6
 DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
 
 CHAIN
@@ -93,7 +93,7 @@ CHAIN
 IF~Global("BD_SaradushFell","Locals",1)~THEN BDCaelar Saradfall
 @37
 DO~SetGlobal("BD_SaradushFell","Locals",2)~
-==BDCaelar IF~ GlobalLT("BD_Visited_BD5300","Global",4)~THEN~I regret the loss of those who stood against me, and trust that, in death, they came to understand what I could not show them in life. I will honor their passing with the return of the Dragonspear dead.~[BD35852]
+==BDCaelar IF~ GlobalLT("BD_Visited_BD5300","Global",4)~THEN@38
 ==BDCaelar IF~ GlobalGT("BD_Visited_BD5300","Global",3)~THEN@39
 ==BDCaelar@40
 END
@@ -104,7 +104,7 @@ END
 
 CHAIN
 IF~~THEN BDCaelar Saradfall2
-~Your father was the Lord of Murder. Countless lives were stolen in his name. What if you could restore that balance - bring back those unjustly taken? Would you? Or is the call of your sire's blood too strong?~[BD35853] 
+@45 
 =@46 EXIT
 
 CHAIN

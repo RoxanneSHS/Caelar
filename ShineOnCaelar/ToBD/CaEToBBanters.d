@@ -40,7 +40,7 @@ DO~SetGlobal("ViconiaImoen","Locals",2)~
 ==BVICON25@23
 ==BDCAelar@24
 ==BVICON25@25
-==BDCAelar~I have heard the whispers. Some see the fire in my eyes and call me mad. I am not. I am ambitious, yes, and I am righteous, but not mad. I see the possibility of a better world than this. And I will make my vision a reality.~[BD35827]
+==BDCAelar@26
 ==BVICON25@27EXIT
 
 EXTEND_BOTTOM Sarvolo 9
