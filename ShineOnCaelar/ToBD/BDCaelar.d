@@ -13,7 +13,7 @@ IF~~THEN BDCaelar Kicked2
 CHAIN
 IF~Global("BD_Visited_BD5300","Global",31)~THEN BDCaelar KickedSelf
 @5
-@6
+=@6
 DO~DestroyItem("BDSolGlo") Wait(2) LeaveParty() EscapeAreaDestroy(55)~EXIT
 
 CHAIN
@@ -104,7 +104,7 @@ END
 
 CHAIN
 IF~~THEN BDCaelar Saradfall2
-@45 
+@45
 =@46 EXIT
 
 CHAIN
