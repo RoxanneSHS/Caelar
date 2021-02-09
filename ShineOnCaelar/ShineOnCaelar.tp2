@@ -3,11 +3,12 @@
 BACKUP ~ShineOnCaelar/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Caelar/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v1.1~
+VERSION ~v1.2~
 
 AUTO_TRA ~ShineOnCaelar/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~ShineOnCaelar/TRA/english/setup-ShineOnCaelar.tra~
+LANGUAGE ~Russian (by yota13 & p_zombie)~ ~russian~ ~ShineOnCaelar/TRA/russian/setup-ShineOnCaelar.tra~
 
 BEGIN
 ~SoD Alternative~
