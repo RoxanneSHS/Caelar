@@ -3,7 +3,7 @@
 BACKUP ~ShineOnCaelar/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Caelar/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v1.2~
+VERSION ~v1.3~
 
 AUTO_TRA ~ShineOnCaelar/TRA/%s~
 
@@ -93,6 +93,12 @@ SAY NAME2 @10
 COPY ~ShineOnCaelar/Cre/BDCAEEN2.CRE~ ~override~
 SAY NAME1 @11
 SAY NAME2 @11
+
+COPY ~ShineOnCaelar/Cre/BDAUN.bmp~ ~override~
+
+COPY_EXISTING ~bdaun.CRE~ ~override/bdaun.CRE~
+              ~bdaun2.CRE~ ~override/bdaun2.CRE~
+WRITE_ASCII 0x34 ~BDAUN~ #8
 
 COPY ~ShineOnCaelar/baf/EEFugue.2DA~ ~override/EEFugue.2DA~
 REPLACE ~99990~ @2016
