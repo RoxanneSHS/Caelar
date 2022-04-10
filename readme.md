@@ -19,12 +19,12 @@ style='font-size:12.0pt;font-family:"Times New Roman",serif'>Caelar Argent is an
 Her story ends with the SoD part of Baldur's Gate. The interactions and possible 
 solutions for the player with her in the original game are limited.<br>
 The mod comes in two parts, one for SoD and a second for ToB (the second part is only
-available for EET and requires that she survived the first encounter. 
+available for EET and requires that she survived the first encounter.) 
 <br>
 <br>
 Features:<br>
-- Part 1 SoD Alternative<br>
-- Many players have felt that the protagonist is denied the valid option during the 
+- Part 1 SoD Alternative (SoD or EET)<br>
+Many players have felt that the protagonist is denied the valid option during the 
 negotiations with Caelar to decide in favour of her offers to join efforts against Avernus.<br>
 This mod allows the player to overrule the coalition leaders and make an own decision 
 about joining Caelar. The prerequisite is that the player knows enough about the 
