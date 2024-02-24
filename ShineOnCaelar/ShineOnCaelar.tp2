@@ -3,12 +3,13 @@
 BACKUP ~ShineOnCaelar/backup~
 AUTHOR ~Roxanne - https://github.com/RoxanneSHS/Caelar/issues~
 
-VERSION ~v1.3~
+VERSION ~v1.4~
 
 AUTO_TRA ~ShineOnCaelar/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~ShineOnCaelar/TRA/english/setup-ShineOnCaelar.tra~
 LANGUAGE ~Russian (by yota13 & p_zombie)~ ~russian~ ~ShineOnCaelar/TRA/russian/setup-ShineOnCaelar.tra~
+LANGUAGE ~Simplified Chinese (by yoshimo0417)~ ~schinese~ ~ShineOnCaelar/TRA/schinese/setup-ShineOnCaelar.tra~
 
 BEGIN
 ~SoD Alternative~
