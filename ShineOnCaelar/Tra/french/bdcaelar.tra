@@ -16,10 +16,10 @@
 @15   = ~Le Plan de Fugue, c'est le Royaume de Kelemvor, le Seigneur des Morts. Je veux dire, tu dois être morte pour y arriver, non ?~
 @16   = ~C'est en fait *tout ce que nous devons faire*. N'y avait-il pas une telle entrée dans la  dernière taverne que nous avons visité ?~
 @17   = ~Je suppose qu'un prêtre de Kelemvor pourrait nous aider dans notre cas ?~
-@18   = ~Aussi, j'en ai parlé avec Sandrah et elle a mentionné un endroit appelé Kanaglym. Ce doit être sous le Château de Vougedragon.~
-@19   = ~Lorsque nous avons exploré la rivière souterraine sous Vougedragon nous avons trouvé un endroit appelé Kanaglym. Serait-ce l'accès que tu recherches ?~
-@20   = ~Sandrah a raison. Quand nous avons exploré la rivière souterraine sous Vougedragon, nous avons trouvé cet endroit. C'est bon de le rappeler, conseillère.~
-@21   = ~Sandrah et ses tomes ! Mais lorsque nous avons exploré la rivière souterraine sous Vougedragon nous n’avons pas trouvé cet endroit. Nous étions peut-être trop pressés à l'époque.~
+@18   = ~Aussi, j'en ai parlé avec Sandrah et elle a mentionné un endroit appelé Kanaglym. Ce doit être sous le Château Paldragon.~
+@19   = ~Lorsque nous avons exploré la rivière souterraine sous Paldragon nous avons trouvé un endroit appelé Kanaglym. Serait-ce l'accès que tu recherches ?~
+@20   = ~Sandrah a raison. Quand nous avons exploré la rivière souterraine sous Paldragon, nous avons trouvé cet endroit. C'est bon de le rappeler, conseillère.~
+@21   = ~Sandrah et ses tomes ! Mais lorsque nous avons exploré la rivière souterraine sous Paldragon nous n’avons pas trouvé cet endroit. Nous étions peut-être trop pressés à l'époque.~
 @22   = ~Mieux encore, où trouve-t-on un temple de Kelemvor ?~
 @23   = ~J'avais un prêtre d'Ilmater parmi mes conseillers pendant la croisade. Cela vaut peut-être la peine de se renseigner auprès de l'un de leurs temples sur le problème? Je veux dire avant de retourner aveuglément à *ce* endroit...~
 @24   = ~Nos prêtres sont bien instruits dans les affaires de Kelemvor, je suis désolée que ma propre éducation ne soit pas aussi approfondie pour être utile.~
@@ -36,8 +36,8 @@
 @35   = ~Les croisés étaient des volontaires. Chacun d’eux avait sa propre raison personnelle de nous suivre. Chacun d’eux avait trouvé une justification pour faire partie du mouvement.~
 @36   = ~Le seul à avoir des intentions cachées était Hephernaan, comme nous le savons tous les deux. Et c’était vraiment caché. Mon objectif était les âmes d'Avernus.~
 @37   = ~Nos décisions ont un impact sur beaucoup de personnes, même sur ceux qui ne nous connaissent même pas et que nous ne connaissons jamais, <CHARNAME>. Je sais ce que ça fait d'être responsable des victimes de la guerre.~
-@38   = ~Je regrette la perte de ceux qui se sont opposés à moi et j'espère que, dans la mort, ils ont compris ce que je ne pouvais pas leur montrer dans la vie. J'honorerai leur décès avec le retour des morts de Vougedragon.~ [BD35852]
-@39   = ~Je regrette la perte de ceux qui se sont opposés à moi et j'espère que, dans la mort, ils ont compris ce que je ne pouvais pas leur montrer dans la vie. Nous avons honoré leur décès avec le retour des morts de Vougedragon.~
+@38   = ~Je regrette la perte de ceux qui se sont opposés à moi et j'espère que, dans la mort, ils ont compris ce que je ne pouvais pas leur montrer dans la vie. J'honorerai leur décès avec le retour des morts de Paldragon.~ [BD35852]
+@39   = ~Je regrette la perte de ceux qui se sont opposés à moi et j'espère que, dans la mort, ils ont compris ce que je ne pouvais pas leur montrer dans la vie. Nous avons honoré leur décès avec le retour des morts de Paldragon.~
 @40   = ~Peux-tu faire une telle promesse à ceux qui ont disparu avec Saradush ?~
 @41   = ~Je n'ai pas causé ces morts comme tu as causé ceux qui sont tombés au cours de TA  croisade. Ne m'amène pas à ton niveau, Caelar, n'essaye même pas.~
 @42   = ~Je jure que les cinq paieront pour ces crimes. Je combattrai ceux qui tentent de ressusciter Bhaal jusqu'à mon dernier souffle.~
@@ -106,7 +106,7 @@
 @105  = ~Explique.~
 @106  = ~Tu as une excuse pour tout, n'est-ce pas.~
 @107  = ~Tu as peut-être été utilisée mais sûrement pas moi.~
-@108  = ~Quand nous avons découvert que notre armée croisée devait marcher vers le château abandonné de Vougedragon où se trouvait le portail, j'ai envoyé des émissaires aux ducs pour les informer et aussi pour leur demander de l'aide et des fournitures. Les ducs ont rejeté ma demande. Ils ont affirmé que le Château de Vougedragon était un endroit stratégique pour eux et qu’une armée étrangère y constituait une menace militaire.~
+@108  = ~Quand nous avons découvert que notre armée croisée devait marcher vers le château abandonné Paldragon où se trouvait le portail, j'ai envoyé des émissaires aux ducs pour les informer et aussi pour leur demander de l'aide et des fournitures. Les ducs ont rejeté ma demande. Ils ont affirmé que le Château Paldragon était un endroit stratégique pour eux et qu’une armée étrangère y constituait une menace militaire.~
 @109  = ~Je suis allé à une réunion avec le duc Ecudargent à la Citadelle du Nord pour le convaincre de l'existence de notre ennemi commun sous le château. Il n’a pas écouté. Il m'a traité d'envahisseuse.~
 @110  = ~C'est la Porte de Baldur qui a déclaré la guerre à la Croisade, <CHARNAME>. Ni la ville, ni les ducs, ni vous n'étiez nos ennemis jusqu'à ce que tes alliés décident de s'opposer à moi.~
 @111  = ~J'étais très préoccupée par cette évolution. Il n’a jamais été prévu d’utiliser les croisés contre un autre ennemi que les démons de l’enfer. Chaque perte dans une guerre que je ne voulais pas était pour moi un chagrin personnel.~

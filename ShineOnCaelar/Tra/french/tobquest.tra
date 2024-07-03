@@ -3,7 +3,7 @@
 @2    = ~Nous recherchons un lieu qui nous permette de livrer certaines âmes souffrantes des défunts au Plan de Fugue. J'ai pu les sauver d'Avernus.~
 @3    = ~Nous recherchons un lieu qui nous permette de livrer certaines âmes souffrantes des défunts au Plan de Fugue. L'ancienne Dame Étincelante a pu les sauver d'Avernus.~
 @4    = ~Humm...c'est une histoire exceptionnelle. Mais vous êtes quelqu'un à croire, tant de choses sont vraies.~
-@5    = ~La rumeur dit qu'il existe un tel endroit sur la Côte des Épées, cela s'appelle Kanaglym. Certains disent qu'il est situé sous l'ancien Château de Vougedragon et gardé par un dragon de l'ombre ou une sorte de dragon. C'est tout ce que je sais, le reste vous appartient, héros.~
+@5    = ~La rumeur dit qu'il existe un tel endroit sur la Côte des Épées, cela s'appelle Kanaglym. Certains disent qu'il est situé sous l'ancien Château Paldragon et gardé par un dragon de l'ombre ou une sorte de dragon. C'est tout ce que je sais, le reste vous appartient, héros.~
 @6    = ~Merci pour votre temps, prêtre. Prenez ceci.~
 @7    = ~Merci pour rien, prêtre. Nous le savions déjà. Prenez ceci.~
 @8    = ~Nous recherchons un endroit qui nous permette de livrer certaines âmes souffrantes des défunts au Plan de Fugue. L'ancienne Dame Étincelante a pu les sauver d'Avernus.~
@@ -24,9 +24,9 @@
 @23   = ~Cela me semble être la meilleure option, <CHARNAME>.~
 @24   = ~Ha, maintenant regardez ce qu'on a trouvé, ça doit être l'ancien soi-disant héros de la Porte de Baldur, bah.~
 @25   = ~Pire encore, <PRO_HESHE> sert désormais ouvertement la foutue dame qui ne brille plus.~
-@26   = ~Ne vous y trompez pas, Maréchal. Gardez votre colère et utilisez vos sens. La raison pour laquelle nous étions ici à Kanaglym était de mettre au repos les âmes de Vougedragon. La croisade est terminée pour toujours.~
+@26   = ~Ne vous y trompez pas, Maréchal. Gardez votre colère et utilisez vos sens. La raison pour laquelle nous étions ici à Kanaglym était de mettre au repos les âmes de Paldragon. La croisade est terminée pour toujours.~
 @27   = ~Elle dit la vérité, Maréchal. J'ai sauvé Caelar d'Avernus ainsi que  toutes les âmes qu'elle pouvait récupérer et nous les avons enterrées dans le Plan de Fugue accessible juste au-delà de ce portail.~
-@28   = ~Ne vous y trompez pas, Maréchal. La raison pour laquelle nous étions ici à Kanaglym était de mettre au repos les âmes de Vougedragon. J'ai sauvé Caelar d'Avernus ainsi que toutes les âmes qu'elle pouvait récupérer et nous les avons enterrées dans le Plan de Fugue accessible juste au-delà de ce portail.~
+@28   = ~Ne vous y trompez pas, Maréchal. La raison pour laquelle nous étions ici à Kanaglym était de mettre au repos les âmes de Paldragon. J'ai sauvé Caelar d'Avernus ainsi que toutes les âmes qu'elle pouvait récupérer et nous les avons enterrées dans le Plan de Fugue accessible juste au-delà de ce portail.~
 @29   = ~Écartez-vous de mon chemin, imbécile, je n'ai plus affaire à vous. L'histoire est passée et je dois maintenant suivre mon destin jusqu'à Téthyr.~
 @30   = ~J'ai tendance à vous croire, <CHARNAME>. D'une manière ou d'une autre, je vous ai toujours perçu comme un <PRO_MANWOMAN> d'honneur.~ ~J'ai tendance à vous croire, <CHARNAME>. D'une manière ou d'une autre, je vous ai toujours perçu comme une  <PRO_MANWOMAN> d'honneur.~
 @31   = ~Le prix à payer pour ce résultat a été élevé. (Soupir), beaucoup trop élevé à mon humble avis mais cela ne peut plus être changé. Trop de gens ont fait trop d’erreurs dans cette affaire.~
